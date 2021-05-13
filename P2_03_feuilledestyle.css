@@ -1,55 +1,256 @@
-            /*general infos*/
+                        /*general infos*/
 body
 {
     font-family: 'Raleway', sans-serif;
+    width: 1440px;
+    margin: auto;
 }
 
-            /*search & filter*/
-#searchAndFilter label
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+                        /*HEADER*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em;
+}
+
+header nav
+{
+    display: flex;
+}
+
+nav div
+{
+    margin-left: 2em;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 1px #0065FC solid;
+}
+
+#registerLink
+{
+    color: #0065FC;
+    font-weight: bold;
+    border: none;
+}
+
+
+                        /*SEARCH & FILTER*/
+#searchAndFilter
+{
+    margin: 3em;
+}
+
+#searchAndFilter div
+{
+    display: flex;
+    align-items: center;
+}
+
+#searchAndFilter label          /*icon gps*/
 {
     background-color: #F2F2F2; 
     padding: 5px;
 }
 
+#filterTitle
+{
+    margin-right: 2em;
+    font-size: 1em;
+}
 
-            /*accommodations*/
+#filterSelection h2         /*filters decoration*/
+{
+    margin-right: 2em;
+    border: 3px #F2F2F2 solid;
+    border-radius: 2em;
+    padding: 0 0.5em 0 0;
+    font-size: 1em; 
+}
+
+#filterSelection h2:hover           /*filters when hovering*/
+{
+    background-color: #DEEBFF;
+}
+
+#filterSelection i          /*filters icons*/ 
+{
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 2em;
+    background-color:  #DEEBFF;
+}
+
+#iForInfo           /* "i" icon*/
+{
+    border: 1px #F2F2F2 solid;
+    border-radius: 2em;
+    font-size: 0.8em;
+    padding: 0.4em 0.7em 0.4em 0.7em;
+    margin-right: 0.5em;
+}
+
+
+
+
+
+                        /*ACCOMMODATIONS*/
 #accommodations
 {
-    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    margin: 3em;
 }
 
-            /*aside*/
+
+
+                        /*ARTICLE*/
+article
+{
+    width: 60%;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    padding: 2em;
+}
+article #containerArticle
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article figure
+{
+    background-color: #ffffff;
+    max-width: 200px;
+    max-height: 200px;  
+    border-radius: 1em;
+    padding: 5px;
+    margin: 1em 2em 1em 0;
+    overflow: hidden;
+    position: relative;
+}
+
+article img
+{
+  max-width: 200px;
+  max-height: 200px; 
+  border-radius: 1em 1em 0 0; 
+}
+
+article figcaption
+{
+    position: absolute;
+}
+
+
+
+                        /*ASIDE*/
 aside
 {
-    background-color: #F2F2F2; 
+    width: 25%;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    padding: 2em;
+}
 }
 
-            /*général TEST*/
-figure
+.floatLeft          /*img on the left of the legend*/
+{
+    float: left;
+}
+
+aside figure        /*management block img + legend*/
+{
+    background-color: #ffffff;
+    border-radius: 1em; 
+    padding: 5px;
+    margin: 0 0 1em 0;
+    overflow: hidden;
+    max-width: 400px;
+    max-height: 150px;
+}
+
+aside img
+{
+  max-width: 200px;
+  max-height: 200px; 
+  margin-right: 1em;            /*distance img/text*/
+  border-radius: 1em 0 0 1em; 
+}
+
+
+
+
+
+
+
+                        /*ACTIVITIES*/
+#activities
+{
+    margin: 3em;
+}
+
+#containerActivities
+{
+    display: flex;
+}
+    
+#activities figure
 {
     background-color: #ffffff;
     max-width: 200px;
     max-height: 200px; 
-    border: 1px black solid; 
+    border-radius: 1em; 
     padding: 5px;
     overflow: hidden;
     position: relative;
 }
 
-img
+#activities img
 {
   max-width: 200px;
-  max-height: 200px;  
+  max-height: 200px; 
+  border-radius: 1em; 
 }
 
-figcaption
+#activities figcaption
 {
     position: absolute;
+
 }
 
-            /*footer*/
+
+
+
+                        /*FOOTER*/
 footer
 {
     background-color: #F2F2F2;
+    display: flex;
+}
 
+footer div
+{
+    margin-right: 20%;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+li
+{
+    padding-bottom: 1em;
 }
