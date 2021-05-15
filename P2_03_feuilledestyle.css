@@ -12,7 +12,7 @@ a
     color: black;
 }
 
-                        /*HEADER*/
+                                    /*HEADER*/
 header
 {
     display: flex;
@@ -44,7 +44,7 @@ nav a:hover
 }
 
 
-                        /*SEARCH & FILTER*/
+                                    /*SEARCH & FILTER*/
 #searchAndFilter
 {
     margin: 3em;
@@ -59,10 +59,36 @@ nav a:hover
 #searchAndFilter label          /*icon gps*/
 {
     background-color: #F2F2F2; 
-    padding: 5px;
+    padding: 1em 1em 0.9em 1em;
+    border-radius: 0.8em 0 0 0.8em;
+    font-size: 0.8em;
 }
 
-#filterTitle
+input[type="text"]          /*where you put the city*/
+{
+    border: 1px #F2F2F2 solid;
+    padding: 0.5em 0.7em 0.6em 0.7em;
+    margin: 0 -0.3em 0 -0.3em;
+    font-size: 1em;
+}
+
+input[type="submit"]          /*button research*/
+{
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 0.8em 0.8em 0;
+    padding: 0.5em 0.7em 0.6em 0.7em;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+form
+{
+    margin-bottom: 1em;
+}
+
+                        /*filters*/
+#filterTitle            
 {
     margin-right: 2em;
     font-size: 1em;
@@ -103,7 +129,7 @@ nav a:hover
 
 
 
-                        /*ACCOMMODATIONS*/
+                                    /*ACCOMMODATIONS*/
 #accommodations
 {
     display: flex;
@@ -194,7 +220,7 @@ aside img
 
 
 
-                        /*ACTIVITIES*/
+                                    /*ACTIVITIES*/
 #activities
 {
     margin: 3em;
@@ -232,11 +258,12 @@ aside img
 
 
 
-                        /*FOOTER*/
+                                    /*FOOTER*/
 footer
 {
     background-color: #F2F2F2;
     display: flex;
+    padding: 2em 3em 2em 3em;
 }
 
 footer div
