@@ -6,29 +6,45 @@ body
     margin: auto;
 }
 
+                        /*general spaces*/
+#containerHeaderAndContent
+{
+    margin: 0 3em 0em 3em;
+}
+
+header, #searchAndFilter, #accommodations, #activities          /*spaces between sections*/
+{
+    padding: 0.5em 0 0.5em 0;
+}
+
+figcaption
+{
+    padding-left: 0.8em;
+}
+
+                        /*general polices*/
 h1
 {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 h2, input
 {
-    font-size: 13px;
+    font-size: 1em;
     font-weight: bold;
 }
 
 h3
 {
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 0.9em;
 }
 
 p, li
 {
-    font-size: 11px;
+    font-size: 0.8em;
 }
 
+                        /*general links*/
 a
 {
     text-decoration: none;
@@ -38,28 +54,26 @@ a
 
 
 
-                                    /*HEADER*/
+                                    /*HEADER*/                
 header
 {
     display: flex;
     justify-content: space-between;
-    margin: 3em;
+    padding-top: 1em;
 }
 
 header nav
 {
     display: flex;
+    justify-content: space-between;
+    width: 25%;
 }
 
-nav p
-{
-    margin-left: 2em;
-}
-
-nav a:hover
+.hebergementDecoration
 {
     color: #0065FC;
     border-top: 1px #0065FC solid;
+    padding: 2em;
 }
 
 #registerLink
@@ -71,11 +85,6 @@ nav a:hover
 
 
                                     /*SEARCH & FILTER*/
-#searchAndFilter
-{
-    margin: 3em;
-}
-
 #searchAndFilter div
 {
     display: flex;
@@ -156,22 +165,25 @@ form
 {
     display: flex;
     justify-content: space-between;
-    margin: 3em;
 }
+
 
 
 
                         /*ARTICLE*/
 article
 {
-    width: 70%;
+    width: 63%;
     background-color: #F2F2F2;
     border-radius: 1em;
+    padding: 1.3em 2em 1.3em 2em;
 }
+
 article #containerArticle
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -181,8 +193,10 @@ article figure
     width: 240px;
     height: 200px;  
     border-radius: 1em;
+    border: 5px #ffffff solid;
     overflow: hidden;
-    margin: auto;
+    margin: 0 0 2em 0;
+    
 }
 
 article img        /*img in article (left part of section)*/
@@ -190,7 +204,6 @@ article img        /*img in article (left part of section)*/
     max-width: 240px;
     max-height: 200px;
     border-radius: 1em 1em 0 0; 
-    margin-top: -1em;
 }
 
 article figcaption
@@ -198,6 +211,10 @@ article figcaption
     line-height: 0.7em;
 }
 
+.boldCaracters
+{
+    font-weight: bold;
+}
 
 
                         /*ASIDE*/
@@ -205,20 +222,33 @@ aside
 {
     background-color: #F2F2F2;
     border-radius: 1em;
+    width: 30%;
+    padding: 1.3em 2em 1.3em 2em;
 }
 
-.floatLeft          /*img on the left of the legend*/
+#asideHeader            /*space between title and icon*/
 {
-    float: left;
+    display: flex;
+    justify-content: space-between;
 }
-
+#asideHeader div            /*icon centered*/
+{ 
+    align-self: center;
+}
 aside figure        /*management block img + legend*/
 {
     background-color: #ffffff;
     border-radius: 1em; 
+    border: 5px #ffffff solid;
     overflow: hidden;
     width: 325px;
     height: 134px;
+    margin: 0;
+}
+
+aside a         /*placement img & text side by side*/
+{
+    display: flex;
 }
 
 aside img
@@ -235,11 +265,6 @@ aside img
 
 
                                     /*ACTIVITIES*/
-#activities
-{
-    margin: 3em;
-}
-
 #containerActivities
 {
     display: flex;
@@ -276,11 +301,12 @@ footer
     background-color: #F2F2F2;
     display: flex;
     padding: 2em 3em 2em 3em;
+    margin-top: 1em;
 }
 
 footer div
 {
-    margin-right: 20%;
+    width: 30%;
 }
 
 ul
