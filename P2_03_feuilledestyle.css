@@ -94,9 +94,9 @@ header nav
 #searchAndFilter label          /*icon gps*/
 {
     background-color: #F2F2F2; 
-    padding: 1em 1em 0.9em 1em;
+    padding: 0.9em 1em 0.8em 1em;
     border-radius: 0.8em 0 0 0.8em;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 input[type="text"]          /*where you put the city*/
@@ -131,7 +131,7 @@ form
     margin-right: 2em;
     border: 3px #F2F2F2 solid;
     border-radius: 2em;
-    padding: 0 0.5em 0 0;
+    padding: 0.3em 1em 0.3em 1em;
 }
 
 #filterSelection h2:hover           /*filters when hovering*/
@@ -176,7 +176,7 @@ article
     width: 63%;
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding: 1.3em 2em 1.3em 2em;
+    padding: 1.5em 2em 1.5em 2em;
 }
 
 article #containerArticle
@@ -222,14 +222,16 @@ aside
 {
     background-color: #F2F2F2;
     border-radius: 1em;
-    width: 30%;
+    
     padding: 1.3em 2em 1.3em 2em;
+    margin-left: 2.5em;
 }
 
 #asideHeader            /*space between title and icon*/
 {
     display: flex;
     justify-content: space-between;
+    width: 325px;
 }
 #asideHeader div            /*icon centered*/
 { 
@@ -243,7 +245,7 @@ aside figure        /*management block img + legend*/
     overflow: hidden;
     width: 325px;
     height: 134px;
-    margin: 0;
+    margin: 0 0 2em 0;
 }
 
 aside a         /*placement img & text side by side*/
@@ -269,6 +271,7 @@ aside img
 {
     display: flex;
     justify-content: space-between;
+    height: 445px;
 }
     
 #activities figure
@@ -276,7 +279,8 @@ aside img
     width: 300px;
     max-height: 445px;  
     overflow: hidden;
-    border: 1px black solid;
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 0px 5px 5px #F2F2F2;
     margin: 0;
 }
 
