@@ -1,3 +1,97 @@
+@media all and (max-width: 767px)
+{
+    body
+    {
+        width: auto;
+    }
+
+    #containerFilters
+    {
+        flex-direction: column;
+    }
+
+    #filterTitle
+    {
+        align-self: flex-start;
+    }
+
+    #filterSelection
+    {
+        align-self: flex-start;
+    }
+
+    #accommodations
+    {
+        flex-direction: column;
+    }
+
+    #containerArticle
+    {
+        flex-direction: column;
+    }
+
+    #asideFigures
+    {
+        flex-direction: column;
+    }
+
+    #containerActivities
+    {
+        flex-direction: column;
+    }
+
+    footer 
+    {
+        flex-direction: column;
+    }
+}
+
+
+@media all and (max-width: 991px)
+{
+    body
+    {
+        width: auto;
+    }
+
+    #containerFilters
+    {
+        flex-direction: column;
+    }
+
+    #filterTitle
+    {
+        align-self: flex-start;
+    }
+
+    #filterSelection
+    {
+        align-self: flex-start;
+    }
+
+    #accommodations
+    {
+        flex-direction: column;
+    }
+
+
+    #asideFigures
+    {
+        display: flex;
+    }
+
+    footer div
+    {
+        width: 20%;
+    }
+
+}
+
+
+
+
+
+
                         /*general infos*/
 body
 {
@@ -236,9 +330,9 @@ article figure
     height: 200px;  
     border-radius: 1em;
     border: 5px #ffffff solid;
+    box-shadow: 0px 5px 5px #e4e4e4;
     overflow: hidden;
     margin: 0 0 2em 0;
-    
 }
 
 article img        /*img in article (left part of section)*/
@@ -283,6 +377,7 @@ aside figure        /*management block img + legend*/
     background-color: #ffffff;
     border-radius: 1em; 
     border: 5px #ffffff solid;
+    box-shadow: 0px 5px 5px #e4e4e4;
     overflow: hidden;
     width: 325px;
     height: 134px;
@@ -327,7 +422,7 @@ aside figcaption
     max-height: 445px;  
     overflow: hidden;
     border-radius: 1em;
-    box-shadow: 0px 5px 5px #F2F2F2;
+    box-shadow: 0px 5px 5px #e4e4e4;
     margin: 0;
 }
 
