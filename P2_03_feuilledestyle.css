@@ -20,7 +20,7 @@
         align-self: flex-start;
     }
 
-    #accommodations
+    #hebergements
     {
         flex-direction: column;
     }
@@ -92,7 +92,7 @@
 
 
 
-                        /*general infos*/
+                        /*BODY*/
 body
 {
     font-family: 'Raleway', sans-serif;
@@ -100,13 +100,62 @@ body
     margin: auto;
 }
 
-                        /*general spaces*/
-#containerHeaderAndContent
+
+
+                        /*FLEXBOX general*/
+
+.body__containers--flex
+{
+    display: flex;
+}
+
+.body__containers--space-between
+{
+    justify-content: space-between;
+}
+
+.body__containers--column
+{
+   flex-direction: column; 
+}
+
+
+
+                        /*COLORS*/
+
+/*filters icons && stars icons*/
+.content__icons--colorBlue
+{
+    color: #0065FC;
+}
+
+/*stars icons*/
+.content__icons--colorGrey
+{
+    color: #F2F2F2;
+}
+
+/*sections background*/
+.body__article_aside_footer--background-grey
+{
+    background-color: #F2F2F2;
+}
+
+
+
+                        /*SPACES general*/
+.body__header_content--margin
 {
     margin: 0 3em 0em 3em;
 }
 
-header, #accommodations, #activities          /*spaces between sections*/
+.sections__h1--margin-bottom
+{
+    margin-bottom: 1.2em;
+}
+
+/*spaces between sections*/
+header, #hebergements, #activities          
 {
     margin: 0 0 3.5em 0;
 }
@@ -116,21 +165,17 @@ figcaption
     padding-left: 0.8em;
 }
 
-                        /*general polices*/
+
+
+                        /*FONT general*/
 h1
 {
     font-size: 1.4em;
 }
 
-#accommodations h1, #activities h1
-{
-    margin-bottom: 1.2em;
-}
-
 h2, input
 {
     font-size: 1em;
-    font-weight: bold;
 }
 
 h3
@@ -143,12 +188,49 @@ p, li
     font-size: 0.8em;
 }
 
-                        /*general links*/
+/*bold*/
+.caracters--bold, h2, input
+{
+    font-weight: bold;
+}
+
+
+
+                        /*LINKS general*/
+
 a
 {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
+
+
+
+                        /*SECTIONS VISUALS*/
+.content__figures--visual
+{
+    overflow: hidden;
+    box-shadow: 0px 5px 5px #e4e4e4;
+    
+}
+
+.hebergements__figures--background
+{
+    background-color: #ffffff;
+    margin: 0 0 2em 0;
+}
+
+.content__borders--radius
+{
+    border-radius: 1em;
+}
+
+
+
+
+
+
+
 
 
 
@@ -156,31 +238,25 @@ a
                                     /*HEADER*/                
 header
 {
-    display: flex;
-    justify-content: space-between;
     padding-top: 1em;
 }
 
 header nav
 {
-    display: flex;
-    justify-content: space-between;
     width: 25%;
 }
 
-.hebergementDecoration
+.nav__caracters--colorBlue
 {
     color: #0065FC;
+}
+
+.nav__linkHebergements--visual
+{
     border-top: 2px #0065FC solid;
     padding: 2em;
 }
 
-#registerLink
-{
-    color: #0065FC;
-    font-weight: bold;
-    border: none;
-}
 
 
                                     /*SEARCH & FILTER*/
@@ -191,7 +267,6 @@ header nav
 
 #searchAndFilter div
 {
-    display: flex;
     align-items: center;
 }
 
@@ -229,80 +304,71 @@ form
 }
 
                         /*filters*/
-#filterTitle            
+.searchAndFilter__block--margin
 {
     margin-right: 2em;
 }
 
-#filterSelection
+.searchAndFilter__filtersContainer
 {
     margin: 1em 0 1em 0;
 }
 
-#filterSelection .filters         /*filters decoration*/
+.searchAndFilter__divs_icons--radius
 {
-    margin-right: 2em;
-    border: 3px #F2F2F2 solid;
     border-radius: 2em;
+}
+
+.searchAndFilter__filter          /*filters decoration*/
+{
+    border: 3px #F2F2F2 solid;
     border-left-color: #DEEBFF;
     padding: 0em 1.5em 0em 0em;
 }
 
-#filterSelection .filters:hover           /*filters when hovering*/
+.searchAndFilter__filter i, .searchAndFilter__filter:hover           /*icons + filters when hovering*/
 {
     background-color: #DEEBFF;
 }
 
-#filterSelection i         /*filters icons*/ 
+.searchAndFilter__filter i         /*filters icons*/ 
 {
     font-size: 1.2em;
     margin-right: 0.7em;
-    border-radius: 2em;
-    background-color:  #DEEBFF;
 }
 
-#billPadding
+
+.filter__billIcon--padding
 {
-    padding: 0.7em 0.6em 0.7em 0.5em;
+    padding: 0.7em 0.6em 0.7em 0.5em;           /*modifications to have round borders*/
 }
 
-#childPadding
+.filter__childIcon--padding
 {
     padding: 0.7em 0.9em 0.7em 0.8em;
 
 }
 
-#heartPadding
+.filter__heartIcon_dogIcon--padding
 {
     padding: 0.7em 0.7em 0.7em 0.6em;
 }
 
-#dogPadding
-{
-    padding: 0.7em 0.7em 0.7em 0.6em;
-}
-
-#iForInfo           /* "i" icon*/
+.searchAndFilter__iconInfo--border          /* "i" icon*/
 {
     border: 1px #F2F2F2 solid;
-    border-radius: 2em;
     font-size: 0.8em;
     padding: 0.4em 0.7em 0.4em 0.7em;
     margin-right: 0.5em;
 }
 
 
-
-
-
-                                    /*ACCOMMODATIONS*/
-#accommodations
+                        /*HEBERGEMENTS*/
+.hebergements__figures--border-margin
 {
-    display: flex;
-    justify-content: space-between;
+    border: 5px #ffffff solid;
+    margin: 0 0 2em 0;
 }
-
-
 
 
 
@@ -310,35 +376,19 @@ form
 article
 {
     width: 63%;
-    background-color: #F2F2F2;
-    border-radius: 1em;
     padding: 1.5em 2em 1.5em 2em;
 }
 
-article #containerArticle
+#containerArticle
 {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 
 article figure
 {
-    background-color: #ffffff;
     width: 240px;
     height: 200px;  
-    border-radius: 1em;
-    border: 5px #ffffff solid;
-    box-shadow: 0px 5px 5px #e4e4e4;
-    overflow: hidden;
-    margin: 0 0 2em 0;
-}
-
-article img        /*img in article (left part of section)*/
-{
-    max-width: 240px;
-    max-height: 200px;
 }
 
 article figcaption
@@ -346,27 +396,20 @@ article figcaption
     line-height: 0.7em;
 }
 
-.boldCaracters          /*low prices & "€"*/
-{
-    font-weight: bold;
-}
 
 
                         /*ASIDE*/
 aside
 {
-    background-color: #F2F2F2;
-    border-radius: 1em;  
     padding: 1.3em 2em 1.3em 2em;
     margin-left: 2.5em;
 }
 
 #asideHeader            /*space between title and icon*/
 {
-    display: flex;
-    justify-content: space-between;
     width: 325px;
 }
+
 #asideHeader div            /*icon centered*/
 { 
     align-self: center;
@@ -374,32 +417,12 @@ aside
 }
 aside figure        /*management block img + legend*/
 {
-    background-color: #ffffff;
-    border-radius: 1em; 
-    border: 5px #ffffff solid;
-    box-shadow: 0px 5px 5px #e4e4e4;
-    overflow: hidden;
     width: 325px;
     height: 134px;
-    margin: 0 0 2em 0;
-}
-
-aside a         /*placement img & text side by side*/
-{
-    display: flex;
-}
-
-aside img
-{
-  max-width: 127px;
-  max-height: 134px;  
 }
 
 aside figcaption
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 0 0 0.8em 1em;
 }
 
@@ -409,10 +432,8 @@ aside figcaption
 
 
                                     /*ACTIVITIES*/
-#containerActivities
+.activities__containers--height
 {
-    display: flex;
-    justify-content: space-between;
     height: 445px;
 }
     
@@ -420,33 +441,15 @@ aside figcaption
 {
     width: 300px;
     max-height: 445px;  
-    overflow: hidden;
-    border-radius: 1em;
-    box-shadow: 0px 5px 5px #e4e4e4;
     margin: 0;
 }
 
-#activities img
-{
-    max-width: 300px;
-    max-height: 390px;
-}
-
-.spaceBetween
-{
-    height: 445px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 
 
                                     /*FOOTER*/
 footer
 {
-    background-color: #F2F2F2;
-    display: flex;
     padding: 2em 3em 2em 3em;
     margin-top: 1em;
 }
