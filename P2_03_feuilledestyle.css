@@ -1,91 +1,4 @@
-@media all and (max-width: 767px)
-{
-    body
-    {
-        width: auto;
-    }
 
-    #containerFilters
-    {
-        flex-direction: column;
-    }
-
-    #filterTitle
-    {
-        align-self: flex-start;
-    }
-
-    #filterSelection
-    {
-        align-self: flex-start;
-    }
-
-    #hebergements
-    {
-        flex-direction: column;
-    }
-
-    #containerArticle
-    {
-        flex-direction: column;
-    }
-
-    #asideFigures
-    {
-        flex-direction: column;
-    }
-
-    #containerActivities
-    {
-        flex-direction: column;
-    }
-
-    footer 
-    {
-        flex-direction: column;
-    }
-}
-
-
-@media all and (max-width: 991px)
-{
-    body
-    {
-        width: auto;
-    }
-
-    #containerFilters
-    {
-        flex-direction: column;
-    }
-
-    #filterTitle
-    {
-        align-self: flex-start;
-    }
-
-    #filterSelection
-    {
-        align-self: flex-start;
-    }
-
-    #accommodations
-    {
-        flex-direction: column;
-    }
-
-
-    #asideFigures
-    {
-        display: flex;
-    }
-
-    footer div
-    {
-        width: 20%;
-    }
-
-}
 
 
 
@@ -474,3 +387,136 @@ li
 {
     padding-bottom: 1em;
 }
+
+
+
+
+@media all and (max-width: 991px)
+{
+    body
+    {
+        width: auto;
+    }
+
+    #containerFilters
+    {
+        flex-direction: column;
+    }
+
+    #filterTitle
+    {
+        align-self: flex-start;
+    }
+
+    #filterSelection
+    {
+        align-self: flex-start;
+    }
+
+    #hebergements
+    {
+        flex-direction: column;
+    }
+
+
+    #asideFigures
+    {
+        display: flex;
+    }
+
+    footer div
+    {
+        width: 20%;
+    }
+
+}
+
+
+@media all and (max-width: 767px)
+{
+    body
+    {
+        width: auto;
+    }
+
+    .body__header_content--margin
+    {
+        margin: 0;
+    }
+
+
+    header 
+    {
+        flex-direction: column;
+    }
+
+    .nav___p_sinscrire--position
+    {
+        justify-self: baseline;
+    }
+
+
+    #searchAndFilter h1
+    {
+        line-height: 1em;
+    }
+
+    #containerFilters
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #filterSelection
+    {
+        align-self: flex-start;
+    }
+
+
+
+
+    #hebergements
+    {
+        flex-direction: column-reverse;
+    }
+
+
+    article 
+    {
+        width: auto;
+    }
+
+    #containerArticle
+    {
+        flex-direction: column;
+    }
+
+    aside
+    {
+        margin-left: 0;
+    }
+
+    #asideFigures
+    {
+        flex-direction: column;
+    }
+
+
+
+
+    #containerActivities
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+
+
+    footer 
+    {
+        flex-direction: column;
+    }
+}
+
+
