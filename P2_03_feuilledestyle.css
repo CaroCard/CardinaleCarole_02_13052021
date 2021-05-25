@@ -250,7 +250,7 @@ form
 
 .searchAndFilter__filter i         /*filters icons*/ 
 {
-    font-size: 1.2em;
+    font-size: 1.2em;   
     margin-right: 0.7em;
 }
 
@@ -410,27 +410,27 @@ aside figcaption
     width: 300px;
 }
 
-.activities__bigImg--laptopSize
+.activities__bigImg--laptopHeight
 {
     height: 390px;
 }
 
-.activities__pomeguesImg--laptopSize
+.activities__pomeguesImg--laptopHeight
 {
     height: 180px;
 }
 
-.activities__frioulImg--laptopSize
+.activities__frioulImg--laptopHeight
 {
     height: 110px;
 }
 
-.activities__notredameImg--laptopSize
+.activities__notredameImg--laptopHeight
 {
     height: 140px;
 }
 
-.activities__longchampImg--laptopSize
+.activities__longchampImg--laptopHeight
 {
     height: 150px;
 }
@@ -501,16 +501,22 @@ li
 
 
 
-@media all and (max-width: 991px)
+@media screen and (max-width: 992px)
 {
     body
     {
         width: auto;
+        overflow: hidden;
     }
 
     #containerFilters
     {
         flex-direction: column;
+    }
+
+    #flex_filters
+    {
+        flex-wrap: wrap;
     }
 
     #filterTitle
@@ -542,11 +548,12 @@ li
 }
 
 
-@media all and (max-width: 767px)
+@media screen and (max-width: 688px)
 {
     body
     {
         width: auto;
+        overflow: hidden;
     }
 
     .body__header_content--margin
