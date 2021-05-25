@@ -159,6 +159,11 @@ header nav
     width: 25%;
 }
 
+nav a
+{
+    padding: 2em;
+}
+
 .nav__caracters--colorBlue
 {
     color: #0065FC;
@@ -167,7 +172,6 @@ header nav
 .nav__linkHebergements--visual
 {
     border-top: 2px #0065FC solid;
-    padding: 2em;
 }
 
 
@@ -309,6 +313,35 @@ article figcaption
     line-height: 0.7em;
 }
 
+#containerArticle div
+{
+    width: 240px;
+    height: 114px;
+}
+
+/*Images laptop sizes*/
+.article__img--size
+{
+    width: 240px;
+    height: 114px;
+}
+
+/*Images ARTICLE*/
+#articleImg_cannebiere { background-image: url("P2_05_reservia_img/hebergements/4_small/1cannebiereS.jpg")}
+
+#articleImg_port { background-image: url("P2_05_reservia_img/hebergements/4_small/2portS.jpg");}
+
+#articleImg_mouettes { background-image: url("P2_05_reservia_img/hebergements/4_small/3mouettesS.jpg");}
+
+#articleImg_mer { background-image: url("P2_05_reservia_img/hebergements/4_small/4merS.jpg");}
+
+#articleImg_panier { background-image: url("P2_05_reservia_img/hebergements/4_small/5panierS.jpg");}
+
+#articleImg_amina { background-image: url("P2_05_reservia_img/hebergements/4_small/6aminaS.jpg");}
+
+
+
+
 
 
                         /*ASIDE*/
@@ -339,6 +372,20 @@ aside figcaption
     padding: 0 0 0.8em 1em;
 }
 
+/*Images laptop sizes*/
+.aside__img--size
+{
+    width: 127px;
+    height: 134px;
+}
+
+
+/*Images ASIDE*/
+#asideImg_soleil { background-image: url("P2_05_reservia_img/hebergements/4_small/7soleilS.jpg");}
+
+#asideImg_coeur { background-image: url("P2_05_reservia_img/hebergements/4_small/8coeurS.jpg");}
+
+#asideImg_bleublanc { background-image: url("P2_05_reservia_img/hebergements/4_small/9bleublancS.jpg");}
 
 
 
@@ -356,6 +403,69 @@ aside figcaption
     max-height: 445px;  
     margin: 0;
 }
+
+/*Images laptop sizes*/
+.activities__allImg--laptopWidth
+{
+    width: 300px;
+}
+
+.activities__bigImg--laptopSize
+{
+    height: 390px;
+}
+
+.activities__pomeguesImg--laptopSize
+{
+    height: 180px;
+}
+
+.activities__frioulImg--laptopSize
+{
+    height: 110px;
+}
+
+.activities__notredameImg--laptopSize
+{
+    height: 140px;
+}
+
+.activities__longchampImg--laptopSize
+{
+    height: 150px;
+}
+
+/*Images ACTIVITIES*/
+#activitiesImg_vieuxport
+{
+    background-image: url("P2_05_reservia_img/activites/4_small/1vieuxportS.jpg");
+}
+
+#activitiesImg_pomegues 
+{
+    background-image: url("P2_05_reservia_img/activites/4_small/2pomeguesS.jpg");
+}
+
+#activitiesImg_frioul 
+{ 
+    background-image: url("P2_05_reservia_img/activites/4_small/3frioulS.jpg");
+}
+
+#activitiesImg_calanques 
+{ 
+    background-image: url("P2_05_reservia_img/activites/4_small/4calanquesS.jpg");
+}
+
+#activitiesImg_notredame 
+{ 
+    background-image: url("P2_05_reservia_img/activites/4_small/5notredameS.jp");
+}
+
+#activitiesImg_longchamp 
+{ 
+    background-image: url("P2_05_reservia_img/activites/4_small/6longchampS.jpg");
+}
+
 
 
 
@@ -408,7 +518,7 @@ li
         align-self: flex-start;
     }
 
-    #filterSelection
+    #containerFilters
     {
         align-self: flex-start;
     }

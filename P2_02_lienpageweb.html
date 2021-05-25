@@ -17,10 +17,14 @@
     <body>
         <div class="body__header_content--margin">
 
-            <header class="body__containers--flex body__containers--space-between">            <!--HEADER-->
-                <div><img src="P2_04_reservia_img/logo/Reservia.svg" alt="logo écrit Reservia"></div>
+            <!--HEADER-->
+            <header class="body__containers--flex body__containers--space-between">            
+                <div>
+                    <img src="P2_05_reservia_img/logo/Reservia.svg" alt="logo écrit Reservia">
+                </div>
 
-                <nav class="body__containers--flex body__containers--space-between">           <!--nav-->
+                <!--nav-->
+                <nav class="body__containers--flex body__containers--space-between">           
                     <p><a href="#anchorAccommodations" class="nav__linkHebergements--visual nav__caracters--colorBlue">Hébergements</a></p>
                     <p><a href="#anchorActivities">Activités</a></p>
                     <p class="nav___p_sinscrire--position"><a href="" class="caracters--bold nav__caracters--colorBlue">S'inscrire</a></p>
@@ -32,14 +36,14 @@
                 <p>En plein centre ville ou en pleine nature</p>
 
                 
-                <form method="post" action=".php">
+                <form method="post" action="">
                     <label for="map"><a href=""></a><i class="fas fa-map-marker-alt"></i></label>            <!--map link-->
                     <input type="text" name="location" id="map" size="25" maxlength="50" value="Marseille, France"/>            <!--barre de recherche-->
                     <input type="submit" value="Rechercher"/>
                 </form>
 
                 <div id="containerFilters" class="body__containers--flex">
-                    <h2 class="searchAndFilter__filterTitle searchAndFilter__block--margin">Filtres</h2>            <!--filtres-->
+                    <h2 id="filterTitle" class="searchAndFilter__block--margin">Filtres</h2>            <!--filtres-->
                     <div class="searchAndFilter__filtersContainer body__containers--flex">
 
                         <div class="searchAndFilter__filter searchAndFilter__block--margin searchAndFilter__divs_icons--radius
@@ -77,8 +81,7 @@
 
                     <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">           <!--1st row-->
                         <a href ="">
-                            <div>   
-                                <img src="P2_04_reservia_img/hebergements/4_small/1cannebiereS.jpg" alt="Chambre de l'Auberge la Cannebière"/>
+                            <div id="articleImg_cannebiere" class="article__img--size">   
                             </div>  
                             <figcaption>
                                 <h3>Auberge la Cannebière</h3>
@@ -90,8 +93,7 @@
 
                     <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                         <a href ="">
-                            <div>
-                                <img src="P2_04_reservia_img/hebergements/4_small/2portS.jpg" alt="Chambre de l'hôtel du port"/>
+                            <div id="articleImg_port" class="article__img--size">
                             </div>
                             <figcaption>
                                 <h3>Hôtel du port</h3>
@@ -103,8 +105,7 @@
 
                     <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                         <a href ="">
-                            <div>
-                                <img src="P2_04_reservia_img/hebergements/4_small/3mouettesS.jpg" alt="Chambre de l'hôtel Les mouettes"/>
+                            <div id="articleImg_mouettes" class="article__img--size">
                             </div>
                             <figcaption>
                                 <h3>Hôtel Les mouettes</h3>
@@ -116,8 +117,7 @@
 
                     <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">           <!--2nd row-->
                         <a href ="">
-                            <div>
-                                <img src="P2_04_reservia_img/hebergements/4_small/4merS.jpg" alt="Chambre de l'hôtel de la mer"/>
+                            <div id="articleImg_mer" class="article__img--size">
                             </div> 
                             <figcaption>          
                                 <h3>Hôtel de la mer</h3>
@@ -129,8 +129,7 @@
 
                     <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                         <a href ="">
-                            <div>
-                                <img src="P2_04_reservia_img/hebergements/4_small/5panierS.jpg" alt="Chambre de l'Auberge Le Panier"/>
+                            <div id="articleImg_panier" class="article__img--size">
                             </div>
                             <figcaption>
                                 <h3>Auberge Le Panier</h3>
@@ -142,8 +141,7 @@
 
                     <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                         <a href ="">
-                            <div>
-                                <img src="P2_04_reservia_img/hebergements/4_small/6aminaS.jpg" alt="Chambre de l'hôtel chez Amina"/>
+                            <div id="articleImg_amina" class="article__img--size">
                             </div>
                             <figcaption>
                                 <h3>Hôtel chez Amina</h3>
@@ -168,8 +166,7 @@
                     <div id="asideFigures">
                         <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                             <a href="" class="body__containers--flex">
-                                <div>
-                                    <img src="P2_04_reservia_img/hebergements/4_small/7soleilS.jpg" alt="Chambre de l'hôtel le soleil du matin"/>
+                                <div id="asideImg_soleil" class="aside__img--size">
                                 </div>
                                 <figcaption class="body__containers--flex body__containers--space-between body__containers--column">
                                     <div>
@@ -185,8 +182,7 @@
 
                         <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                             <a href="" class="body__containers--flex">
-                                <div>
-                                    <img src="P2_04_reservia_img/hebergements/4_small/8coeurS.jpg" alt="Chambre d'hôtes d'Au coeur de l'eau"/>
+                                <div id="asideImg_coeur" class="aside__img--size">
                                 </div>
                                 <figcaption class="body__containers--flex body__containers--space-between body__containers--column">
                                     <div>
@@ -202,8 +198,7 @@
 
                         <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                             <a href="" class="body__containers--flex">
-                                <div>
-                                    <img src="P2_04_reservia_img/hebergements/4_small/9bleublancS.jpg" alt="Chambre de l'hôtel Tout bleu et Blanc"/>
+                                <div id="asideImg_bleublanc" class="aside__img--size">
                                 </div>
                                 <figcaption class="body__containers--flex body__containers--space-between body__containers--column">
                                     <div>
@@ -226,8 +221,7 @@
                 <div id="containerActivities" class="activities__containers--height body__containers--flex body__containers--space-between">
                     <figure class="content__figures--visual content__borders--radius">
                         <a href="">
-                            <div>
-                                <img src="P2_04_reservia_img/activites/4_small/1vieuxportS.jpg" alt="Vieux port"/>
+                            <div id="activitiesImg_vieuxport" class="activities__allImg--laptopWidth activities__bigImg--laptopSize">
                             </div>
                             <figcaption>
                                 <h3>Vieux Port</h3>
@@ -236,10 +230,10 @@
                     </figure>
 
                     <div class="activities__containers--height body__containers--flex body__containers--space-between body__containers--column">
+
                         <figure class="content__figures--visual content__borders--radius">
                             <a href="">
-                                <div>
-                                    <img src="P2_04_reservia_img/activites/4_small/2pomeguesS.jpg" alt="Fort de Pomègues"/>
+                                <div id="activitiesImg_pomeguègues" class="activities__allImg--laptopWidth activities__pomeguesImg--laptopSize">
                                 </div>
                                 <figcaption>
                                     <h3>Fort de Pomègues</h3>
@@ -249,8 +243,7 @@
 
                         <figure class="content__figures--visual content__borders--radius">
                             <a href="">
-                                <div>
-                                    <img src="P2_04_reservia_img/activites/4_small/3frioulS.jpg" alt="Iles du Frioul"/>
+                                <div id="activitiesImg_frioul" class="activities__allImg--laptopWidth activities__frioulImg--laptopSize">
                                 </div>
                                     <figcaption>
                                         <h3>Iles du Frioul</h3>
@@ -261,8 +254,7 @@
 
                     <figure class="content__figures--visual content__borders--radius">
                         <a href="">
-                            <div>
-                                <img src="P2_04_reservia_img/activites/4_small/4calanquesS.jpg" alt="Parc National des Calanques"/>
+                            <div id="activitiesImg_calanques" class="activities__allImg--laptopWidth activities__bigImg--laptopSize">
                             </div>
                             <figcaption>
                                 <h3>Parc National des Calanques</h3>
@@ -271,10 +263,10 @@
                     </figure>
 
                     <div class="activities__containers--height body__containers--flex body__containers--space-between body__containers--column">
+
                         <figure class="content__figures--visual content__borders--radius">
                             <a href="">
-                                <div>
-                                    <img src="P2_04_reservia_img/activites/4_small/5notredameS.jpg" alt="Notre-Dame-de-la-Garde"/>
+                                <div id="activitiesImg_notredame" class="activities__allImg--laptopWidth activities__notredameImg--laptopSize">
                                 </div>
                                     <figcaption>
                                         <h3>Notre-Dame-de-la-Garde</h3>
@@ -284,8 +276,7 @@
 
                         <figure class="content__figures--visual content__borders--radius">
                             <a href="">
-                                <div>
-                                    <img src="P2_04_reservia_img/activites/4_small/6longchampS.jpg" alt="Parc Longchamp"/>
+                                <div id="activitiesImg_longchamp" class="activities__allImg--laptopWidth activities__longchampImg--laptopSize">
                                 </div>
                                     <figcaption>
                                         <h3>Parc Longchamp</h3>
