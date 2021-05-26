@@ -67,16 +67,19 @@ body
     margin-bottom: 1.2em;
 }
 
+figcaption
+{
+    padding-left: 0.8em;
+}
+
+
 /*spaces between sections*/
 header, #hebergements, #activities          
 {
     margin: 0 0 3.5em 0;
 }
 
-figcaption
-{
-    padding-left: 0.8em;
-}
+
 
 
 
@@ -93,12 +96,12 @@ h2, input
 
 h3
 {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 p, li
 {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 /*bold*/
@@ -156,7 +159,7 @@ header
 
 header nav
 {
-    width: 25%;
+    width: 30%;
 }
 
 nav a
@@ -221,7 +224,7 @@ form
 }
 
                         /*filters*/
-.searchAndFilter__block--margin
+.searchAndFilter__block--margin /*space between filters*/
 {
     margin-right: 2em;
 }
@@ -284,9 +287,13 @@ form
 .hebergements__figures--border-margin
 {
     border: 5px #ffffff solid;
-    margin: 0 0 2em 0;
+    margin-bottom: 2em;
 }
 
+#hebergements i
+{
+    font-size: 0.8em;
+}
 
 
                         /*ARTICLE*/
@@ -313,13 +320,8 @@ article figcaption
     line-height: 0.7em;
 }
 
-#containerArticle div
-{
-    width: 240px;
-    height: 114px;
-}
 
-/*Images laptop sizes*/
+/*Images laptop sizes to fixate the background area*/
 .article__img--size
 {
     width: 240px;
@@ -327,17 +329,35 @@ article figcaption
 }
 
 /*Images ARTICLE*/
-#articleImg_cannebiere { background-image: url("P2_05_reservia_img/hebergements/4_small/1cannebiereS.jpg")}
+#articleImg_cannebiere 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/1cannebiereS.jpg")
+}
 
-#articleImg_port { background-image: url("P2_05_reservia_img/hebergements/4_small/2portS.jpg");}
+#articleImg_port 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/2portS.jpg");
+}
 
-#articleImg_mouettes { background-image: url("P2_05_reservia_img/hebergements/4_small/3mouettesS.jpg");}
+#articleImg_mouettes 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/3mouettesS.jpg");
+}
 
-#articleImg_mer { background-image: url("P2_05_reservia_img/hebergements/4_small/4merS.jpg");}
+#articleImg_mer 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/4merS.jpg");
+}
 
-#articleImg_panier { background-image: url("P2_05_reservia_img/hebergements/4_small/5panierS.jpg");}
+#articleImg_panier 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/5panierS.jpg");
+}
 
-#articleImg_amina { background-image: url("P2_05_reservia_img/hebergements/4_small/6aminaS.jpg");}
+#articleImg_amina 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/6aminaS.jpg");
+}
 
 
 
@@ -369,8 +389,9 @@ aside figure        /*management block img + legend*/
 
 aside figcaption
 {
-    padding: 0 0 0.8em 1em;
+    padding: 0 1em 0.5em 0.8em;
 }
+
 
 /*Images laptop sizes*/
 .aside__img--size
@@ -396,7 +417,7 @@ aside figcaption
 {
     height: 445px;
 }
-    
+ 
 #activities figure
 {
     width: 300px;
@@ -404,7 +425,7 @@ aside figcaption
     margin: 0;
 }
 
-/*Images laptop sizes*/
+/*Images laptop sizes to fixate background area*/
 .activities__allImg--laptopWidth
 {
     width: 300px;
@@ -458,7 +479,7 @@ aside figcaption
 
 #activitiesImg_notredame 
 { 
-    background-image: url("P2_05_reservia_img/activites/4_small/5notredameS.jp");
+    background-image: url("P2_05_reservia_img/activites/4_small/5notredameS.jpg");
 }
 
 #activitiesImg_longchamp 
@@ -501,12 +522,11 @@ li
 
 
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 62em)
 {
     body
     {
         width: auto;
-        overflow: hidden;
     }
 
     #containerFilters
@@ -548,20 +568,25 @@ li
 }
 
 
-@media screen and (max-width: 688px)
+@media screen and (max-width: 43em)
 {
     body
     {
         width: auto;
-        overflow: hidden;
     }
 
     .body__header_content--margin
     {
-        margin: 0;
+        margin: 0; 
     }
 
+    .body__content--paddingPhone
+    {
+        padding: 0 1.4em 0em 1.4em;
 
+    }
+
+                            /*HEADER*/
     header 
     {
         flex-direction: column;
@@ -573,6 +598,7 @@ li
     }
 
 
+                            /*SEARCH && FILTERS*/
     #searchAndFilter h1
     {
         line-height: 1em;
@@ -589,18 +615,33 @@ li
         align-self: flex-start;
     }
 
+    .searchAndFilter__filtersContainer
+    {
+        margin-top: 0em;
+    }
 
 
 
+                        /*HEBERGEMENTS*/
     #hebergements
     {
         flex-direction: column-reverse;
     }
 
+    #hebergements figure 
+    {
+        width: 324px;
+        margin-bottom: 0.7em; 
+    }
 
+   
+
+
+                        /*ARTICLE*/
     article 
     {
         width: auto;
+        background: none;
     }
 
     #containerArticle
@@ -608,31 +649,143 @@ li
         flex-direction: column;
     }
 
-    aside
+    article figure 
     {
+        height: 190px;
+    }
+
+
+    /*Images phone sizes to fixate the background area*/
+    .article__img--size
+    {
+        width: 326px;
+        height: 114px;
+    }
+
+    /*Images ARTICLE PHONE*/
+    #articleImg_cannebiere 
+    { 
+        background-image: url("P2_05_reservia_img/hebergements_phone/1cannebierePhone.jpg")
+    }
+
+    #articleImg_port 
+    { 
+        background-image: url("P2_05_reservia_img/hebergements_phone/2portPhone.jpg");
+    }
+
+    #articleImg_mouettes 
+    { 
+        background-image: url("P2_05_reservia_img/hebergements_phone/3mouettesPhone.jpg");
+    }
+
+    #articleImg_mer 
+    { 
+        background-image: url("P2_05_reservia_img/hebergements_phone/4merPhone.jpg");
+    }
+
+    #articleImg_panier 
+    { 
+        background-image: url("P2_05_reservia_img/hebergements_phone/5panierPhone.jpg");
+    }
+
+    #articleImg_amina 
+    { 
+        background-image: url("P2_05_reservia_img/hebergements_phone/6aminaPhone.jpg");
+    }
+
+
+                        /*ASIDE*/
+    aside 
+    { 
         margin-left: 0;
     }
+
 
     #asideFigures
     {
         flex-direction: column;
+     
+    }
+
+    aside figure 
+    {
+        height: 134px;
+        justify-items: center;
     }
 
 
 
 
+
+                        /*ACTIVITIES*/
     #containerActivities
     {
         flex-direction: column;
         height: auto;
     }
 
+    #containerActivities figure 
+    {
+        width: 334px;
+        height: 190px;
+        margin-bottom: 1.4em;
+    }
+
+    .activities__doubleIMGdiv--heightPhone
+    {
+        height: 424px;
+    }
+
+
+    /*Images phone sizes to fixate background area*/
+    .activities__img--size
+    {
+        width: 334px;
+        height: 134px;
+    }
+
+    /*Images ACTIVITIES PHONE*/
+    #activitiesImg_vieuxport
+    {
+        background-image: url("P2_05_reservia_img/activities_phone/1vieuxportPhone.jpg");
+    }
+
+    #activitiesImg_pomegues 
+    {
+        background-image: url("P2_05_reservia_img/activities_phone/2pomeguesPhone.jpg");
+    }
+
+    #activitiesImg_frioul 
+    { 
+        background-image: url("P2_05_reservia_img/activities_phone/3frioulPhone.jpg");
+    }
+
+    #activitiesImg_calanques 
+    { 
+        background-image: url("P2_05_reservia_img/activities_phone/4calanquesPhone.jpg");
+    }
+
+    #activitiesImg_notredame 
+    { 
+        background-image: url("P2_05_reservia_img/activities_phone/5notredamePhone.jpg");
+    }
+
+    #activitiesImg_longchamp 
+    { 
+        background-image: url("P2_05_reservia_img/activities_phone/6longchampPhone.jpg");
+    }
 
 
 
+                        /*FOOTER*/
     footer 
     {
         flex-direction: column;
+    }
+
+    footer div 
+    {
+        width: auto;
     }
 }
 
