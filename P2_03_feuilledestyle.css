@@ -282,6 +282,12 @@ form
     margin-right: 0.5em;
 }
 
+#infoLine  /*align icon and text*/
+{
+    display: flex;
+}
+
+
 
                         /*HEBERGEMENTS*/
 .hebergements__figures--border-margin
@@ -294,6 +300,8 @@ form
 {
     font-size: 0.8em;
 }
+
+
 
 
                         /*ARTICLE*/
@@ -586,16 +594,19 @@ li
 
     }
 
+    .body__content--margin-top
+    {
+        margin-top: 0em;
+    }
+
                             /*HEADER*/
+   
     header 
     {
         flex-direction: column;
     }
 
-    .nav___p_sinscrire--position
-    {
-        justify-self: baseline;
-    }
+    
 
 
                             /*SEARCH && FILTERS*/
@@ -620,6 +631,10 @@ li
         margin-top: 0em;
     }
 
+    .searchAndFilter__block--margin /*space between filters*/
+    {
+        margin: 0 0.7em 0.9em 0;
+    }
 
 
                         /*HEBERGEMENTS*/
