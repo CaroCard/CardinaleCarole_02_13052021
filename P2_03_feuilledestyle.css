@@ -136,12 +136,15 @@ a
     margin: 0 0 2em 0;
 }
 
-.content__borders--radius
+.content__borders--radius /* borders corners of icons & figures*/
 {
     border-radius: 1em;
 }
 
-
+.content__aside_article--radius
+{
+    border-radius: 1em;
+}
 
 
 
@@ -606,8 +609,21 @@ li
         flex-direction: column;
     }
 
-    
+    nav a
+    {
+        padding: 0.8em;
+    }
 
+    .nav__linkHebergements--visual
+    {
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+    }
+
+    .nav__linkActivites--borderPhone
+    {
+        border-bottom: 2px #F2F2F2 solid;
+    }
 
                             /*SEARCH && FILTERS*/
     #searchAndFilter h1
@@ -637,6 +653,8 @@ li
     }
 
 
+
+
                         /*HEBERGEMENTS*/
     #hebergements
     {
@@ -649,16 +667,23 @@ li
         margin-bottom: 0.7em; 
     }
 
-   
+    .content__aside_article--radius
+    {
+        border-radius: 0;
+    }
 
 
                         /*ARTICLE*/
     article 
     {
         width: auto;
-        background: none;
     }
 
+    #article_noBackground
+    {
+        background: none;
+    }
+    
     #containerArticle
     {
         flex-direction: column;
