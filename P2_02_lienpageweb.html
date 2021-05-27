@@ -18,32 +18,34 @@
         <div class="body__header_content--margin">
 
             <!--HEADER-->
-            <header class="body__containers--flex body__containers--space-between body__content--paddingPhone body__content--margin-top">            
-                <div>
+            <header class="body__containers--flex body__containers--space-between body__content--paddingPhone  body__bigSections--margin">            
+                <div id="reservia_logo">
                     <img src="P2_05_reservia_img/logo/Reservia.svg" alt="logo écrit Reservia">
                 </div>
 
                 <!--nav-->
-                <nav class="body__containers--flex body__containers--space-between body__content--margin-top">           
+                <nav class="body__containers--flex body__containers--space-between">           
                     <p><a href="#anchorAccommodations" class="nav__linkHebergements--visual nav__caracters--colorBlue">Hébergements</a></p>
                     <p><a href="#anchorActivities" class="nav__linkActivites--borderPhone">Activités</a></p>
                     <p><a href="" class="caracters--bold nav__caracters--colorBlue">S'inscrire</a></p>
                 </nav>
             </header>
 
+
             <!--SEARCH && FILTER-->
-            <section id="searchAndFilter" class="body__content--paddingPhone body__content--margin-top">           
+            <section id="searchAndFilter" class="body__content--paddingPhone ">           
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
 
                 
-                <form method="post" action="" class="body__content--margin-top">
+                <form method="post" action="" class="">
                     <label for="map"><a href=""></a><i class="fas fa-map-marker-alt"></i></label>            <!--map link-->
                     <input type="text" name="location" id="map" size="25" maxlength="50" value="Marseille, France"/>            <!--barre de recherche-->
                     <input type="submit" value="Rechercher"/>
+                    <button><i class="fas fa-search"></i></button>
                 </form>
 
-                <div id="containerFilters" class="body__containers--flex body__content--margin-top">
+                <div id="containerFilters" class="body__containers--flex ">
 
                     <h2 id="filterTitle" class="searchAndFilter__block--margin ">Filtres</h2>            <!--filtres-->
                     <div id="flex_filters" class="searchAndFilter__filtersContainer body__containers--flex">
@@ -77,9 +79,10 @@
                 </div>
             </section>
 
-            <section id="hebergements" class="body__containers--flex body__containers--space-between">
 
-                <article id="article_noBackground" class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone body__content--margin-top">
+            <section id="hebergements" class="body__containers--flex body__containers--space-between body__bigSections--margin  ">
+
+                <article id="article_noBackground" class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone sections__article_aside_footer--padding">
                 <h1 id="anchorAccommodations" class="sections__h1--margin-bottom">Hébergements à Marseille</h1>
 
                 <div id="containerArticle" class="body__containers--flex body__containers--space-between">         <!--partie gauche-->
@@ -161,7 +164,7 @@
                 <a href=""><h3>Afficher plus</h3></a>
                 </article>
 
-                <aside class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone body__content--margin-top">         <!--partie droite-->
+                <aside class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone sections__article_aside_footer--padding">         <!--partie droite-->
                     
                     <div id="asideHeader" class="body__containers--flex body__containers--space-between">
                         <h1 class="sections__h1--margin-bottom">Les plus populaires</h1>
@@ -220,10 +223,12 @@
                 </aside>
             </section>
 
-            <section id="activities" class="body__content--paddingPhone body__content--margin-top">           <!--Activities, places to visit-->
+
+            <section id="activities" class="body__content--paddingPhone  body__bigSections--margin">           <!--Activities, places to visit-->
                 <h1 id="anchorActivities" class="sections__h1--margin-bottom">Activités à Marseille</h1>
 
                 <div id="containerActivities" class="activities__containers--height body__containers--flex body__containers--space-between">
+
                     <figure class="content__figures--visual content__borders--radius">
                         <a href="">
                             <div id="activitiesImg_vieuxport" class="activities__allImg--laptopWidth activities__bigImg--laptopHeight activities__img--size">
@@ -294,7 +299,7 @@
 
         </div>
 
-        <footer class="body__containers--flex body__article_aside_footer--background-grey body__content--paddingPhone body__content--margin-top">            <!--Footer/About-->
+        <footer class="body__containers--flex body__article_aside_footer--background-grey body__content--paddingPhone  sections__article_aside_footer--padding">            <!--Footer/About-->
             <div>
                 <h2>A propos</h2>           
                 

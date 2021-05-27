@@ -74,9 +74,9 @@ figcaption
 
 
 /*spaces between sections*/
-header, #hebergements, #activities          
+.body__bigSections--margin          
 {
-    margin: 0 0 3.5em 0;
+    margin-bottom: 3.5em;
 }
 
 
@@ -220,6 +220,12 @@ input[type="submit"]          /*button research*/
     padding: 0.7em 0.7em 0.8em 0.7em;
     color: #ffffff;
 }
+
+button
+{
+    visibility: hidden;
+}
+
 
 form
 {
@@ -387,11 +393,12 @@ aside
     width: 325px;
 }
 
-#asideHeader div            /*icon centered*/
+#asideHeader div            /*icon centered and sized*/
 { 
     align-self: center;
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
+
 aside figure        /*management block img + legend*/
 {
     width: 325px;
@@ -586,21 +593,26 @@ li
         width: auto;
     }
 
-    .body__header_content--margin
+    .body__header_content--margin          /*global margin concerned by total body except footer*/
     {
         margin: 0; 
     }
 
-    .body__content--paddingPhone
+    .body__content--paddingPhone           /*sides padding of all body*/
     {
-        padding: 0 1.4em 0em 1.4em;
+        padding: 1em 1.4em 1em 1.4em;
 
     }
 
-    .body__content--margin-top
+    .body__bigSections--margin          /*margin corrected for header, hebergements, activities*/     
     {
-        margin-top: 0em;
+        margin-bottom: 0;
     }
+
+
+
+   
+
 
                             /*HEADER*/
    
@@ -609,6 +621,15 @@ li
         flex-direction: column;
     }
 
+    #reservia_logo
+    {
+        margin-bottom: 0.5em;
+    }
+
+    nav         /*space between nav & title*/
+    {
+        margin-bottom: 0.5em;
+    }
     nav a
     {
         padding: 0.8em;
@@ -625,16 +646,37 @@ li
         border-bottom: 2px #F2F2F2 solid;
     }
 
+
+
+
                             /*SEARCH && FILTERS*/
+    
+    input[value="Rechercher"]
+    {
+        display: none;
+    }
+    
+    button          /*button research icon*/
+    {
+        visibility: visible;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 1em;
+        color: #ffffff;
+    }
+    
+    
     #searchAndFilter h1
     {
         line-height: 1em;
+        margin-bottom: 0;
     }
 
     #containerFilters
     {
         flex-direction: column;
         flex-wrap: wrap;
+        margin-bottom: -1em;
     }
 
     #filterSelection
