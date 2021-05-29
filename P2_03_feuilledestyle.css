@@ -255,14 +255,14 @@ input          /*where you put the city*/
 
 
                         /*filters*/
-.searchAndFilter__block--margin /*space between filters*/
+.searchAndFilter__block--margin /*space between filters & filterTitle*/
 {
     margin-right: 2em;
 }
 
-.searchAndFilter__filtersContainer
+#containerFilters
 {
-    margin: 1em 0 1em 0;
+    margin: 2em 0 1em 0;
 }
 
 .searchAndFilter__divs_icons--radius
@@ -270,40 +270,35 @@ input          /*where you put the city*/
     border-radius: 2em;
 }
 
-.searchAndFilter__filter          /*filters decoration*/
+.searchAndFilter__filter          /*filters*/
 {
     border: 3px #F2F2F2 solid;
-    border-left-color: #DEEBFF;
-    padding: 0em 1.5em 0em 0em;
+    background-color: #ffffff;
+    height: 50px;
+    padding-right: 0.9em;
 }
 
-.searchAndFilter__filter i, .searchAndFilter__filter:hover           /*icons + filters when hovering*/
+.filters_button__divIcon--looks         /*icons background & else*/
+{
+    height: 50px;
+    width: 50px;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em; 
+    margin: -0.25em 0.6em 0 -0.7em;  
+}
+
+
+ .searchAndFilter__filter:hover           /*filters when hovering*/
 {
     background-color: #DEEBFF;
-}
-
-.searchAndFilter__filter i         /*filters icons*/ 
-{
-    font-size: 1.2em;   
-    margin-right: 0.7em;
+    border: 3px #DEEBFF solid;
 }
 
 
-.filter__billIcon--padding
-{
-    padding: 0.7em 0.6em 0.7em 0.5em;           /*modifications to have round borders*/
-}
 
-.filter__childIcon--padding
-{
-    padding: 0.7em 0.9em 0.7em 0.8em;
 
-}
-
-.filter__heartIcon_dogIcon--padding
-{
-    padding: 0.7em 0.7em 0.7em 0.6em;
-}
 
 .searchAndFilter__iconInfo--border          /* "i" icon*/
 {
@@ -695,7 +690,6 @@ li
     {
         flex-direction: column;
         flex-wrap: wrap;
-        margin-bottom: -1em;
     }
 
     #filterSelection
