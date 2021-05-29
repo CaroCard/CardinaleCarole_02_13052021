@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
                         /*BODY*/
 body
 {
@@ -160,15 +153,26 @@ header
     padding-top: 1em;
 }
 
-header nav
+#reservia_logo
 {
-    width: 30%;
+    width: 70%;
 }
 
-nav a
+
+
+
+nav p
 {
     padding: 2em;
+    width: 50%;
 }
+
+.header__links--flex-end
+{
+    display: flex;
+    align-self: flex-end;
+}
+
 
 .nav__caracters--colorBlue
 {
@@ -286,9 +290,15 @@ input          /*where you put the city*/
     display: flex;
     justify-content: center;
     font-size: 1.2em; 
-    margin: -0.25em 0.6em 0 -0.7em;  
+    margin: -0.25em 0 0 -0.7em;  
 }
 
+.searchAndFilter__filter p
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0.8em 0.7em 0 0.7em;
+}
 
  .searchAndFilter__filter:hover           /*filters when hovering*/
 {
@@ -424,7 +434,8 @@ aside figure        /*management block img + legend*/
 
 aside figcaption
 {
-    padding: 0 1em 0.5em 0.8em;
+    padding: 0em 1em 0.5em 0.8em;
+    line-height: 0.8em;
 }
 
 
@@ -437,11 +448,20 @@ aside figcaption
 
 
 /*Images ASIDE*/
-#asideImg_soleil { background-image: url("P2_05_reservia_img/hebergements/4_small/7soleilS.jpg");}
+#asideImg_soleil 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/7soleilS.jpg");
+}
 
-#asideImg_coeur { background-image: url("P2_05_reservia_img/hebergements/4_small/8coeurS.jpg");}
+#asideImg_coeur 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/8coeurS.jpg");
+}
 
-#asideImg_bleublanc { background-image: url("P2_05_reservia_img/hebergements/4_small/9bleublancS.jpg");}
+#asideImg_bleublanc 
+{ 
+    background-image: url("P2_05_reservia_img/hebergements/4_small/9bleublancS.jpg");
+}
 
 
 
@@ -635,7 +655,8 @@ li
    
     header 
     {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     #reservia_logo
@@ -646,10 +667,26 @@ li
     nav         /*space between nav & title*/
     {
         margin-bottom: 0.5em;
+        order: 1;
+        width: 100%;
+        margin: 0em 1.4em 0em -1.4em; /***A VOIR && TESTER***/
     }
+
     nav a
     {
         padding: 0.8em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav p 
+    {
+        border: 1px #000000 solid;
+    }
+
+    #inscriptionLink
+    {
+        justify-self: flex-end;
     }
 
     .nav__linkHebergements--visual
@@ -749,6 +786,10 @@ li
         height: 190px;
     }
 
+    article figcaption
+    {
+        line-height: 0.4em;
+    }
 
     /*Images phone sizes to fixate the background area*/
     .article__img--size
@@ -787,6 +828,8 @@ li
     { 
         background-image: url("P2_05_reservia_img/hebergements_phone/6aminaPhone.jpg");
     }
+
+
 
 
                         /*ASIDE*/
