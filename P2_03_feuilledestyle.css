@@ -198,39 +198,61 @@ nav a
     line-height: 0;
 }
 
-#searchAndFilter label          /*icon gps*/
+form
+{
+    margin: 1.5em 0 1.5em 0;
+}
+
+.form__buttons      /*ALL Form buttons caracteristics*/
+{
+    height: 50px;
+    border: none;
+}
+
+.form__square_buttons--sizes-border  /*map & phoneSearch buttons*/
+{
+    width: 50px;
+    font-size: 1em;
+}
+
+#mapButton          /*icon gps*/
 {
     background-color: #F2F2F2; 
-    padding: 0.9em 1em 0.9em 1em;
     border-radius: 0.8em 0 0 0.8em;
 }
 
-input[type="text"]          /*where you put the city*/
+input          /*where you put the city*/
 {
     border: 1px #F2F2F2 solid;
-    padding: 0.7em 0.7em 0.8em 0.8em;
-    margin: 0 -0.3em 0 -0.3em;
+    border-left: none;
+    border-right: none;
+    height: 46px;
+    padding-left: 1em;
+    margin: 0 -1em 0 -0.3em;  /*remove empty sides spaces with buttons, more on the right because of the border-radius that needs to be reached*/
 }
 
-input[type="submit"]          /*button research*/
+/*search buttons*/
+.form__search_buttons--looks
 {
     background-color: #0065FC;
-    border: none;
-    border-radius: 0 0.8em 0.8em 0;
-    padding: 0.7em 0.7em 0.8em 0.7em;
     color: #ffffff;
 }
 
-button
+#RechercherButton        /*Big laptop search button with text*/
+{
+    border-radius: 0 0.8em 0.8em 0;
+    padding: 0 1.2em 0 1.2em;
+    font-size: 1.2em;
+}
+
+#phoneSearchButton          /*phone search button with icon*/
 {
     visibility: hidden;
+    border-radius: 0.8em;
 }
 
 
-form
-{
-    margin: 1.5em 0 1em 0;
-}
+
 
                         /*filters*/
 .searchAndFilter__block--margin /*space between filters*/
@@ -650,19 +672,16 @@ li
 
 
                             /*SEARCH && FILTERS*/
-    
-    input[value="Rechercher"]
+
+
+    #RechercherButton
     {
         display: none;
     }
     
-    button          /*button research icon*/
+    #phoneSearchButton
     {
         visibility: visible;
-        background-color: #0065FC;
-        border: none;
-        border-radius: 1em;
-        color: #ffffff;
     }
     
     

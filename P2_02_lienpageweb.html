@@ -39,10 +39,16 @@
 
                 
                 <form method="post" action="" class="">
-                    <label for="map"><a href=""></a><i class="fas fa-map-marker-alt"></i></label>            <!--map link-->
-                    <input type="text" name="location" id="map" size="25" maxlength="50" value="Marseille, France"/>            <!--barre de recherche-->
-                    <input type="submit" value="Rechercher"/>
-                    <button><i class="fas fa-search"></i></button>
+                    <!--map link-->
+                    <button id="mapButton" class="form__square_buttons--sizes-border form__buttons "><i class="fas fa-map-marker-alt"></i></button>
+
+                    <!--barre de recherche-->        
+                    <input type="text" name="location" id="map" size="22" maxlength="50" value="Marseille, France"/>
+
+                    <!--search buttons-->            
+                    <button id="RechercherButton" class="form__search_buttons--looks form__buttons ">Rechercher</button>
+
+                    <button id="phoneSearchButton" class="form__square_buttons--sizes-border form__search_buttons--looks form__buttons "><i class="fas fa-search"></i></button>
                 </form>
 
                 <div id="containerFilters" class="body__containers--flex ">
