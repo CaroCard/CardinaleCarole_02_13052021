@@ -46,7 +46,7 @@
                     <p>En plein centre ville ou en pleine nature</p>
 
                     
-                    <form method="post" action="" class="">
+                    <form method="post" action="">
                         <!--map link-->
                         <button id="mapButton" class="form__square_buttons--sizes-border form__buttons "><i class="fas fa-map-marker-alt"></i></button>
 
@@ -59,7 +59,7 @@
                         <button id="phoneSearchButton" class="form__square_buttons--sizes-border form__search_buttons--looks form__buttons "><i class="fas fa-search"></i></button>
                     </form>
 
-                    <div id="containerFilters" class="body__containers--flex">
+                    <div id="containerFilters" class="body__containers--flex phoneBody__containers--column">
 
                         <h2 id="filterTitle" class="searchAndFilter__block--margin ">Filtres</h2>            <!--filtres-->
 
@@ -67,28 +67,28 @@
 
                             <button class="searchAndFilter__filter searchAndFilter__block--margin searchAndFilter__divs_icons--radius
                             body__containers--flex">
-                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius">
+                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center">
                                 <i class="fas fa-money-bill-wave filter__billIcon--padding  content__icons--colorBlue"></i>
                                 </div>
                                 <p>Économique</p>
                             </button>
 
                             <button class="searchAndFilter__filter searchAndFilter__block--margin searchAndFilter__divs_icons--radius body__containers--flex">
-                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius">
+                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center">
                                 <i class="fas fa-child filter__childIcon--padding content__icons--colorBlue"></i>
                                 </div>
                                 <p>Familial</p>
                             </button>
 
                             <button class="searchAndFilter__filter searchAndFilter__block--margin searchAndFilter__divs_icons--radius body__containers--flex">
-                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius">
+                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center">
                                 <i class="fas fa-heart filter__heartIcon_dogIcon--padding content__icons--colorBlue"></i>
                                 </div>
                                 <p>Romantique</p>
                             </button>
 
                             <button class="searchAndFilter__filter searchAndFilter__block--margin  body__containers--flex searchAndFilter__divs_icons--radius">
-                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius">
+                                <div class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center">
                                 <i class="fas fa-dog filter__heartIcon_dogIcon--padding content__icons--colorBlue"></i>
                                 </div>
                                 <p>Animaux autorisés</p>
@@ -103,98 +103,99 @@
                 </section>
 
 
-                <section id="hebergements" class="body__containers--flex body__containers--space-between body__sections--margin  ">
+                <section id="hebergements" class="body__containers--flex body__containers--space-between body__sections--margin">
 
-                    <article id="article_noBackground" class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone sections__article_aside_footer--padding">
-                    <h1 id="anchorAccommodations" class="sections__h1--margin-bottom">Hébergements à Marseille</h1>
-
-                    <div id="containerArticle" class="body__containers--flex body__containers--space-between">         <!--partie gauche-->
-
-                        <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">           <!--1st row-->
-                            <a href ="">
-                                <div id="articleImg_cannebiere" class="article__img--size">   
-                                </div>  
-                                <figcaption>
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <span class="caracters--bold">25€</span></p>
-                                    <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
-                            <a href ="">
-                                <div id="articleImg_port" class="article__img--size">
-                                </div>
-                                <figcaption>
-                                    <h3>Hôtel du port</h3>
-                                    <p>Nuit à partir de 52<span class="caracters--bold">€</span></p>
-                                    <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i>
-                                </figcaption>    
-                            </a>
-                        </figure >  
-
-                        <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
-                            <a href ="">
-                                <div id="articleImg_mouettes" class="article__img--size">
-                                </div>
-                                <figcaption>
-                                    <h3>Hôtel Les mouettes</h3>
-                                    <p>Nuit à partir de 76<span class="caracters--bold">€</span></p>
-                                    <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">           <!--2nd row-->
-                            <a href ="">
-                                <div id="articleImg_mer" class="article__img--size">
-                                </div> 
-                                <figcaption>          
-                                    <h3>Hôtel de la mer</h3>
-                                    <p>Nuit à partir de 46<span class="caracters--bold">€</span></p>
-                                    <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i><i class="fas fa-star content__icons--colorGrey"></i>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                        <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
-                            <a href ="">
-                                <div id="articleImg_panier" class="article__img--size">
-                                </div>
-                                <figcaption>
-                                    <h3>Auberge Le Panier</h3>
-                                    <p>Nuit à partir de <span class="caracters--bold">23€</span></p>
-                                    <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
-                                </figcaption>
-                            </a>
-                        </figure>  
-
-                        <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
-                            <a href ="">
-                                <div id="articleImg_amina" class="article__img--size">
-                                </div>
-                                <figcaption>
-                                    <h3>Hôtel chez Amina</h3>
-                                    <p>Nuit à partir de 96<span class="caracters--bold">€</span></p>
-                                    <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i>
-                                </figcaption>
-                            </a>
-                        </figure>
-
-                    </div>
+                    <article id="article_noBackground" class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone body__containers--flex body__containers--column body__containers--justify-center">
                     
-                    <a href=""><h3>Afficher plus</h3></a>
+                        <h1 id="anchorAccommodations" class="sections__h1--margin-bottom">Hébergements à Marseille</h1>
+
+                        <div id="containerArticle" class="body__containers--flex phoneBody__containers--column body__containers--space-between">         <!--partie gauche-->
+
+                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">           <!--1st row-->
+                                <a href ="">
+                                    <div id="articleImg_cannebiere" class="article__img--size">   
+                                    </div>  
+                                    <figcaption>
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de <span class="caracters--bold">25€</span></p>
+                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                    </figcaption>
+                                </a>
+                            </figure>
+
+                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
+                                <a href ="">
+                                    <div id="articleImg_port" class="article__img--size">
+                                    </div>
+                                    <figcaption>
+                                        <h3>Hôtel du port</h3>
+                                        <p>Nuit à partir de 52<span class="caracters--bold">€</span></p>
+                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i>
+                                    </figcaption>    
+                                </a>
+                            </figure >  
+
+                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
+                                <a href ="">
+                                    <div id="articleImg_mouettes" class="article__img--size">
+                                    </div>
+                                    <figcaption>
+                                        <h3>Hôtel Les mouettes</h3>
+                                        <p>Nuit à partir de 76<span class="caracters--bold">€</span></p>
+                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                    </figcaption>
+                                </a>
+                            </figure>
+
+                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">           <!--2nd row-->
+                                <a href ="">
+                                    <div id="articleImg_mer" class="article__img--size">
+                                    </div> 
+                                    <figcaption>          
+                                        <h3>Hôtel de la mer</h3>
+                                        <p>Nuit à partir de 46<span class="caracters--bold">€</span></p>
+                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                    </figcaption>
+                                </a>
+                            </figure>
+
+                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
+                                <a href ="">
+                                    <div id="articleImg_panier" class="article__img--size">
+                                    </div>
+                                    <figcaption>
+                                        <h3>Auberge Le Panier</h3>
+                                        <p>Nuit à partir de <span class="caracters--bold">23€</span></p>
+                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                    </figcaption>
+                                </a>
+                            </figure>  
+
+                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
+                                <a href ="">
+                                    <div id="articleImg_amina" class="article__img--size">
+                                    </div>
+                                    <figcaption>
+                                        <h3>Hôtel chez Amina</h3>
+                                        <p>Nuit à partir de 96<span class="caracters--bold">€</span></p>
+                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i>
+                                    </figcaption>
+                                </a>
+                            </figure>
+
+                        </div>
+                        
+                        <h3 id="afficherplusLink"><a href="">Afficher plus</a></h3>
                     </article>
 
-                    <aside class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone sections__article_aside_footer--padding">         <!--partie droite-->
+                    <aside class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone sections__article_aside_footer--padding body__containers--flex body__containers--column body__containers--justify-center">         <!--partie droite-->
                         
                         <div id="asideHeader" class="body__containers--flex body__containers--space-between">
                             <h1 class="sections__h1--margin-bottom">Les plus populaires</h1>
                             <div><i class="fas fa-chart-line"></i></div>
                         </div>
 
-                        <div id="asideFigures">
+                        <div id="asideFigures" class=" body__containers--column">
                             <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin">
                                 <a href="" class="body__containers--flex">
                                     <div id="asideImg_soleil" class="aside__img--size">
@@ -247,10 +248,10 @@
                 </section>
 
 
-                <section id="activities" class="body__content--paddingPhone  body__sections--margin">           <!--Activities, places to visit-->
+                <section id="activities" class="body__content--paddingPhone  body__sections--margin body__containers--flex body__containers--column">           <!--Activities, places to visit-->
                     <h1 id="anchorActivities" class="sections__h1--margin-bottom">Activités à Marseille</h1>
 
-                    <div id="containerActivities" class="activities__containers--height body__containers--flex body__containers--space-between">
+                    <div id="containerActivities" class="activities__containers--height body__containers--flex body__containers--space-between phoneBody__containers--column">
 
                         <figure class="content__figures--visual content__borders--radius">
                             <a href="">
@@ -322,7 +323,7 @@
 
             </div>
 
-        <footer class="body__containers--flex body__article_aside_footer--background-grey body__content--paddingPhone  sections__article_aside_footer--padding">            <!--Footer/About-->
+        <footer class="body__containers--flex body__article_aside_footer--background-grey body__content--paddingPhone sections__article_aside_footer--padding phoneBody__containers--column">            <!--Footer/About-->
             <div>
                 <h2>A propos</h2>           
                 
