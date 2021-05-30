@@ -67,7 +67,7 @@ figcaption
 
 
 /*spaces between sections*/
-.body__bigSections--margin          
+.body__sections--margin          
 {
     margin-bottom: 3.5em;
 }
@@ -150,29 +150,19 @@ a
                                     /*HEADER*/                
 header
 {
-    padding-top: 1em;
+    align-items: center;
+}
+
+header p
+{
+    padding: 2em 1.7em 3em 1.7em;
+    margin-top: 0;
 }
 
 #reservia_logo
 {
-    width: 70%;
+    width: 75%;
 }
-
-
-
-
-nav p
-{
-    padding: 2em;
-    width: 50%;
-}
-
-.header__links--flex-end
-{
-    display: flex;
-    align-self: flex-end;
-}
-
 
 .nav__caracters--colorBlue
 {
@@ -191,11 +181,6 @@ nav p
 {
     margin: 0 0 2em 0;
 }  
-
-#searchAndFilter div
-{
-    align-items: center;
-}
 
 #searchAndFilter h1
 {
@@ -272,6 +257,11 @@ input          /*where you put the city*/
 .searchAndFilter__divs_icons--radius
 {
     border-radius: 2em;
+}
+
+#searchAndFilter div            /*place icons ("i" included) in the center*/
+{
+    align-items: center;
 }
 
 .searchAndFilter__filter          /*filters*/
@@ -435,7 +425,6 @@ aside figure        /*management block img + legend*/
 aside figcaption
 {
     padding: 0em 1em 0.5em 0.8em;
-    line-height: 0.8em;
 }
 
 
@@ -637,8 +626,7 @@ li
 
     .body__content--paddingPhone           /*sides padding of all body*/
     {
-        padding: 1em 1.4em 1em 1.4em;
-
+        padding: 0 1.4em 0 1.4em;
     }
 
     .body__bigSections--margin          /*margin corrected for header, hebergements, activities*/     
@@ -659,6 +647,11 @@ li
         justify-content: space-between;
     }
 
+    header p
+    {
+        padding: 0;
+    }
+
     #reservia_logo
     {
         margin-bottom: 0.5em;
@@ -669,24 +662,27 @@ li
         margin-bottom: 0.5em;
         order: 1;
         width: 100%;
-        margin: 0em 1.4em 0em -1.4em; /***A VOIR && TESTER***/
     }
 
     nav a
     {
-        padding: 0.8em;
-        display: flex;
+        padding: 0.8em;         /*put space between word and border*/
         justify-content: space-around;
     }
 
-    nav p 
+    nav p           /*for links to take all the row's space*/
     {
-        border: 1px #000000 solid;
+        width: 50%; 
+    }
+
+    #reservia_logo
+    {
+        padding: 1em 0 1em 1.4em;
     }
 
     #inscriptionLink
     {
-        justify-self: flex-end;
+        padding: 1em 1.4em 1em 0;
     }
 
     .nav__linkHebergements--visual
@@ -705,6 +701,16 @@ li
 
                             /*SEARCH && FILTERS*/
 
+    #searchAndFilter h1
+    {
+        line-height: 1em;
+        margin-bottom: 0;
+    }
+    
+    form
+    {
+        margin: 2em 0 1.5em 0;
+    }
 
     #RechercherButton
     {
@@ -717,11 +723,7 @@ li
     }
     
     
-    #searchAndFilter h1
-    {
-        line-height: 1em;
-        margin-bottom: 0;
-    }
+    
 
     #containerFilters
     {
@@ -732,11 +734,6 @@ li
     #filterSelection
     {
         align-self: flex-start;
-    }
-
-    .searchAndFilter__filtersContainer
-    {
-        margin-top: 0em;
     }
 
     .searchAndFilter__block--margin /*space between filters*/
