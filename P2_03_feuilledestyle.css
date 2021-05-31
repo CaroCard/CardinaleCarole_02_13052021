@@ -577,6 +577,10 @@ li
         width: auto;
     }
 
+    article, #containerActivities, aside
+    {
+        height: auto;
+    }
 
     /*MARGIN && PADDING*/
     .body__header_content--margin          /*global margin concerned by total body except footer*/
@@ -676,31 +680,19 @@ li
         margin: 2em 0 1.5em 0;
     }
 
-    #RechercherButton
-    {
-        display: none;
-    }
-    
-    #phoneSearchButton
-    {
-        visibility: visible;
-    }
+
     
     #containerFilters
     {
         flex-direction: column;
     }
 
-    #filterTitle
+    #filterSelection, #filterTitle
     {
         align-self: flex-start;
     }
 
 
-    #filterSelection
-    {
-        align-self: flex-start;
-    }
 
     .searchAndFilter__block--margin /*space between filters*/
     {
@@ -709,12 +701,7 @@ li
 
 
 
-                        /*SECTIONS hébergements/activités*/
-    article h1, #afficherplusLink, #activities h1           
-    /*to have texts aligned on the the border left and not centered with figures*/
-        {
-            width: 334px; 
-        }
+
 
 
 
@@ -727,7 +714,6 @@ li
 
     #hebergements figure 
     {
-        width: 324px;
         margin-bottom: 0.7em; 
     }
 
@@ -738,65 +724,23 @@ li
 
 
                         /*ARTICLE*/
-    article 
-    {
-        width: auto;
-        height: auto;
 
+
+  
+
+
+    #containerArticle
+    {
+        justify-content: space-around;
     }
 
-    #article_noBackground
-    {
-        background: none;
-    }
-
-    article figure 
-    {
-        height: 190px;
-    }
+  
 
     article figcaption
     {
         line-height: 0.4em;
     }
 
-    /*Images phone sizes to fixate the background area*/
-    .article__img--size
-    {
-        width: 326px;
-        height: 114px;
-    }
-
-    /*Images ARTICLE PHONE*/
-    #articleImg_cannebiere 
-    { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/1cannebierePhone.jpg")
-    }
-
-    #articleImg_port 
-    { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/2portPhone.jpg");
-    }
-
-    #articleImg_mouettes 
-    { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/3mouettesPhone.jpg");
-    }
-
-    #articleImg_mer 
-    { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/4merPhone.jpg");
-    }
-
-    #articleImg_panier 
-    { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/5panierPhone.jpg");
-    }
-
-    #articleImg_amina 
-    { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/6aminaPhone.jpg");
-    }
 
 
 
@@ -810,7 +754,6 @@ li
 
         aside figure 
         {
-            height: 134px;
             justify-items: center;
         }
     }
@@ -830,10 +773,6 @@ li
 
 
                         /*ACTIVITIES*/
-    #containerActivities
-    {
-        height: auto;
-    }
    
 
     #containerActivities figure 
@@ -887,14 +826,6 @@ li
         background-image: url("P2_05_reservia_img/activities_phone/6longchampPhone.jpg");
     }
 
-
-
-                        /*FOOTER*/
-
-    footer div
-    {
-        width: 20%;
-    }
 
 }
 
