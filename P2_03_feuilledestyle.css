@@ -64,12 +64,12 @@ body
     margin: 0 3em 0em 3em;
 }
 
-.sections__h1--margin-bottom
+.sections__h2--margin-bottom
 {
     margin-bottom: 1.2em;
 }
 
-figcaption
+.figure__textDiv--padding-left
 {
     padding-left: 0.8em;
 }
@@ -86,17 +86,17 @@ figcaption
 
 
                         /*FONT general*/
-h1
+h1, h2
 {
     font-size: 1.4em;
 }
 
-h2, input
+h3, input
 {
     font-size: 1em;
 }
 
-h3
+h4
 {
     font-size: 1em;
 }
@@ -269,24 +269,21 @@ input          /*where you put the city*/
     border: 3px #F2F2F2 solid;
     background-color: #ffffff;
     height: 50px;
-    padding-right: 0.9em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.85em 0.9em 0 0;
 }
 
-.filters_button__divIcon--looks         /*icons background & else*/
+.filters_button__divIcon--looks         /*icons background & else*/  /****RENOMME DIV EN SPAN*****/
 {
     height: 50px;
     width: 50px;
     background-color: #DEEBFF;
     font-size: 1.2em; 
-    margin: -0.25em 0 0 -0.7em;  
+    margin: -0.85em 0.5em 0 -0.2em;  
 }
 
-.searchAndFilter__filter p
-{
-    font-size: 1.1em;
-    font-weight: bold;
-    margin: 0.8em 0.7em 0 0.7em;
-}
 
  .searchAndFilter__filter:hover           /*filters when hovering*/
 {
@@ -344,13 +341,15 @@ article
 article figure
 {
     width: 240px;
-    height: 200px;  
+    height: 200px;
 }
 
-article figcaption
+.article__figureTextDiv--line-height
 {
-    line-height: 0.7em;
+    line-height: 0.3em;
 }
+
+
 
 
 /*Images laptop sizes to fixate the background area*/
@@ -421,12 +420,17 @@ aside figure        /*management block img + legend*/
     height: 134px;
 }
 
-aside figcaption
+.aside__textDiv--padding
 {
-    padding: 0em 1em 0.5em 0.8em;
+    padding: 0em 1em 0.5em 0.7em;
 }
 
-aside figcaption h3         /*reduces space between the two text divs*/
+aside h4
+{
+    margin-top: 0.7em;
+}
+
+.aside__h4--margin-bottom         /*reduces space between the two text divs*/
 {
     margin-bottom: -0.5em;
 }
@@ -734,12 +738,7 @@ li
         justify-content: space-around;
     }
 
-  
 
-    article figcaption
-    {
-        line-height: 0.4em;
-    }
 
 
 
@@ -750,14 +749,13 @@ li
     { 
         margin-left: 0;
 
-        
-
-        aside figure 
-        {
-            justify-items: center;
-        }
     }
  
+    aside figure 
+    {
+        justify-items: center;
+    }
+
     #asideFigures
     {
        flex-direction: row;
@@ -935,7 +933,7 @@ li
 
     #searchAndFilter h1
     {
-        line-height: 1em;
+        line-height: 1.2em;
         margin-bottom: 0;
     }
     
@@ -969,7 +967,7 @@ li
 
 
                         /*SECTIONS hébergements/activités*/
-    article h1, #afficherplusLink, #activities h1, footer div         
+    article h2, #afficherplusLink, #activities h2, footer div         
     /*to have texts aligned on the the border left et not centered with figures*/
         {
             width: 334px; 
@@ -1015,9 +1013,9 @@ li
         height: 190px;
     }
 
-    article figcaption
+    .article__figureTextDiv--line-height
     {
-        line-height: 0.4em;
+        line-height: 0.2em;
     }
 
     /*Images phone sizes to fixate the background area*/
