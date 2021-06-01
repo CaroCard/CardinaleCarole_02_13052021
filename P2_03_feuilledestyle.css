@@ -314,7 +314,7 @@ input          /*where you put the city*/
     margin-bottom: 2em;
 }
 
-#hebergements i
+article i, aside i
 {
     font-size: 0.8em;
 }
@@ -610,7 +610,10 @@ li
         flex-wrap: wrap;
     }
 
-
+    .responsiveBody__containers--column
+    {
+        flex-direction: column;
+    }
 
                             /*HEADER*/
    
@@ -683,13 +686,7 @@ li
     {
         margin: 2em 0 1.5em 0;
     }
-
-
-    
-    #containerFilters
-    {
-        flex-direction: column;
-    }
+  
 
     #filterSelection, #filterTitle
     {
@@ -711,12 +708,9 @@ li
 
 
                         /*HEBERGEMENTS*/
-    #hebergements
-    {
-        flex-direction: column-reverse;
-    }
+  
 
-    #hebergements figure 
+    .responsiveHebergements__figures--margin-bottom
     {
         margin-bottom: 0.7em; 
     }
@@ -745,10 +739,10 @@ li
 
 
                         /*ASIDE*/
-    aside 
+    aside          
     { 
         margin-left: 0;
-
+        order: -1;      /*place this part on top of the other*/
     }
  
     aside figure 
@@ -772,12 +766,20 @@ li
 
                         /*ACTIVITIES*/
    
-
+    #containerActivities
+    {
+        justify-content: space-around;
+    }
     #containerActivities figure 
     {
         width: 334px;
         height: 190px;
         margin-bottom: 1.4em;
+    }
+
+    #calanquesFirst         /*puts Calanques img first to harmonize, because of the double divs*/
+    {
+        order: -1;
     }
 
     .activities__doubleIMGdiv--heightPhone
@@ -977,15 +979,11 @@ li
 
 
                         /*HEBERGEMENTS*/
-    #hebergements
-    {
-        flex-direction: column-reverse;
-    }
 
-    #hebergements figure 
+
+    .phoneHebergements__figures--width
     {
         width: 324px;
-        margin-bottom: 0.7em; 
     }
 
     .content__aside_article--radius
@@ -1065,6 +1063,10 @@ li
         margin-left: 0;
     }
 
+    #asideFigures
+    {
+        flex-direction: column;
+    }
 
     aside figure 
     {
@@ -1072,9 +1074,10 @@ li
         justify-items: center;
     }
 
-
-
-
+    .tabletBody__containers--flexWrap
+    {
+        flex-wrap: nowrap;
+    }
 
                         /*ACTIVITIES*/
     #containerActivities
