@@ -587,6 +587,7 @@ li
     }
 
     /*MARGIN && PADDING*/
+
     .body__header_content--margin          /*global margin concerned by total body except footer*/
     {
         margin: 0; 
@@ -602,6 +603,16 @@ li
         margin-bottom: 0;
     }
 
+    .tabletSections__h2_h4--align-center
+    {
+        text-align: center;
+    }
+
+    .responsiveBody__sections--padding
+    {
+        padding: 2em 0em 2em 0;
+    }
+
 
     /*FLEXBOX*/
 
@@ -614,6 +625,10 @@ li
     {
         flex-direction: column;
     }
+
+
+
+
 
                             /*HEADER*/
    
@@ -710,10 +725,7 @@ li
                         /*HEBERGEMENTS*/
   
 
-    .responsiveHebergements__figures--margin-bottom
-    {
-        margin-bottom: 0.7em; 
-    }
+    
 
     .content__aside_article--radius
     {
@@ -724,16 +736,15 @@ li
                         /*ARTICLE*/
 
 
-  
-
-
     #containerArticle
     {
         justify-content: space-around;
     }
 
-
-
+    #article_noBackground
+    {
+        background: none;
+    }
 
 
 
@@ -827,10 +838,17 @@ li
     }
 
 
+    footer
+    {
+        
+        justify-content: space-around;
+    }
+
+
 }
 
 
-@media screen and (max-width: 43em)
+@media screen and (max-width: 47em)
 {
     .body__containers--width-auto
     {
@@ -956,7 +974,7 @@ li
     
     
 
-    #filterTitle, #filterSelection
+    #filterTitle, #filterSelection          /*alignement to the left of the page*/
     {
         align-self: flex-start;
     }
