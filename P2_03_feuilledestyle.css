@@ -574,7 +574,7 @@ li
 
 
 
-@media screen and (max-width: 62em)
+@media screen and (max-width: 88em)
 {
     .body__containers--width-auto
     {
@@ -585,6 +585,19 @@ li
     {
         height: auto;
     }
+
+    #containerArticle, #asideFigures
+    {
+        max-width: 990px;
+    }
+
+    #containerActivities
+    {
+        max-width: 850px;
+    }
+
+
+
 
     /*MARGIN && PADDING*/
 
@@ -603,10 +616,7 @@ li
         margin-bottom: 0;
     }
 
-    .tabletSections__h2_h4--align-center
-    {
-        text-align: center;
-    }
+
 
     .responsiveBody__sections--padding
     {
@@ -735,10 +745,16 @@ li
 
                         /*ARTICLE*/
 
+                        article 
+                        {
+        align-items: center;
+
+                        }
 
     #containerArticle
     {
         justify-content: space-around;
+
     }
 
     #article_noBackground
@@ -765,6 +781,7 @@ li
     {
        flex-direction: row;
        justify-content: space-around;
+        
     }
     
 
@@ -777,6 +794,12 @@ li
 
                         /*ACTIVITIES*/
    
+    #activities
+    {
+        align-items: center;
+
+    }
+    
     #containerActivities
     {
         justify-content: space-around;
@@ -844,11 +867,15 @@ li
         justify-content: space-around;
     }
 
+    footer div
+    {
+        width: auto;
+    }
 
 }
 
 
-@media screen and (max-width: 47em)
+@media screen and (max-width: 48em)
 {
     .body__containers--width-auto
     {
@@ -1117,42 +1144,13 @@ li
     }
 
 
-    /*Images phone sizes to fixate background area*/
-    .activities__img--size
+
+
+
+
+    footer div 
     {
         width: 334px;
-        height: 134px;
-    }
-
-    /*Images ACTIVITIES PHONE*/
-    #activitiesImg_vieuxport
-    {
-        background-image: url("P2_05_reservia_img/activities_phone/1vieuxportPhone.jpg");
-    }
-
-    #activitiesImg_pomegues 
-    {
-        background-image: url("P2_05_reservia_img/activities_phone/2pomeguesPhone.jpg");
-    }
-
-    #activitiesImg_frioul 
-    { 
-        background-image: url("P2_05_reservia_img/activities_phone/3frioulPhone.jpg");
-    }
-
-    #activitiesImg_calanques 
-    { 
-        background-image: url("P2_05_reservia_img/activities_phone/4calanquesPhone.jpg");
-    }
-
-    #activitiesImg_notredame 
-    { 
-        background-image: url("P2_05_reservia_img/activities_phone/5notredamePhone.jpg");
-    }
-
-    #activitiesImg_longchamp 
-    { 
-        background-image: url("P2_05_reservia_img/activities_phone/6longchampPhone.jpg");
     }
     
 }
