@@ -406,6 +406,7 @@ aside
 #asideHeader            /*space between title and icon*/
 {
     width: 325px;
+    margin-bottom: 1.2em;
 }
 
 #asideHeader div            /*icon centered and sized*/
@@ -593,9 +594,8 @@ li
 
     #containerActivities
     {
-        max-width: 850px;
+        max-width: 800px;
     }
-
 
 
 
@@ -616,6 +616,10 @@ li
         margin-bottom: 0;
     }
 
+    .sections__h2--margin-bottom
+    {
+        margin-bottom: 2.5em;
+    }
 
 
     .responsiveBody__sections--padding
@@ -770,6 +774,12 @@ li
     { 
         margin-left: 0;
         order: -1;      /*place this part on top of the other*/
+    }
+
+    #asideHeader
+    {
+        margin-bottom: 2.5em;
+
     }
  
     aside figure 
