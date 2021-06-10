@@ -444,7 +444,7 @@ aside h4
     height: 134px;
 }
 
-.aside__img--size-2
+.aside__img--size-2         /*corrects the anomaly of the picture's width*/
 {
     width: 190px;
     height: 134px;
@@ -582,7 +582,7 @@ li
 
 @media screen and (max-width: 88em)
 {
-    .body__containers--width-auto
+    .responsive__containers--width-auto
     {
         width: auto;
     }
@@ -892,10 +892,7 @@ li
 
 @media screen and (max-width: 48em)
 {
-    .body__containers--width-auto
-    {
-        width: auto;
-    }
+   
 
 
     /*MARGIN && PADDING*/
