@@ -1,7 +1,12 @@
-                        /*BODY*/
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+/*BODY*/
 body
 {
-    font-family: 'Raleway', verdana, sans-serif;
+    font-family: 'Raleway', arial, sans-serif;
     width: 1440px;
     margin: auto;
 }
@@ -73,7 +78,7 @@ article, aside, footer
 /*spaces between sections*/
 .sections--margin          
 {
-    margin-bottom: 3.5em;
+    margin-bottom: 2.5em;
 }
 
                         /*FONT general*/
@@ -214,7 +219,8 @@ input          /*where you put the city*/
 #RechercherButton        /*Big laptop search button with text*/
 {
     border-radius: 0 0.8em 0.8em 0;
-    padding: 0 1.2em 0 1.2em;
+    padding: 0 1.2em 0.1em 1.2em; /*bottom to correct an upper shift*/
+
 }
 
 #phoneSearchButton          /*phone search button with icon*/
@@ -520,29 +526,54 @@ li
 }
 
 
-
-
-
-@media screen and (max-width: 79em)
+@media screen and (max-width: 91em)
 {
     .responsive__containers--width-auto
     {
         width: auto;
     }
 
+    article
+    {
+        padding: 0 1em 0 1em;
+    }
+
+    article h2, #showMoreLink       /*try & aligns text with responsive figures*/
+    {
+        padding: 0 1.5em 0 1.5em;  
+    }
+
+    #containerArticle
+    {
+       justify-content: space-around;
+    }
+
+    aside
+    {
+
+        margin-left: 0.5em;         /*creates empty space between article & aside*/
+        padding: 0 0.5em 0 0.5em;       /*to keep the figures to go on the borders*/
+
+    }
+}
+
+
+
+@media screen and (max-width: 79em)
+{
     article, #containerActivites, aside
     {
         height: auto;
     }
 
     #containerArticle, #containerAside
-    {
-        max-width: 990px;
+    {       
+        max-width: 990px;       /*to stop de figures movement in responsive ffor esthetic purposes*/
     }
 
     #containerActivites
     {
-        max-width: 800px;
+        max-width: 800px;       /*to stop de figures movement in responsive ffor esthetic purposes*/
     }
 
             /*MARGIN && PADDING*/
@@ -807,6 +838,11 @@ li
         margin-bottom: 0;
     }
 
+    /*spaces between sections*/
+    .sections--margin          
+    {
+        margin-bottom: 0;
+    }
 
     /*FLEXBOX*/
     .phone__containers--column
