@@ -2,53 +2,50 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Reservia</title>
-
-                    <!--Google Font Raleway extra-light 200-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        <title>Reservia</title> 
        
                     <!--link icones library-->
         <script src="https://kit.fontawesome.com/a7b1873564.js" crossorigin="anonymous"></script>
        
-        <link rel="stylesheet" type="text/css" href="P2_03_feuilledestyle.css">   
+        <link rel="stylesheet" type="text/css" href="style.css">   
     </head>
 
     <body class="responsive__containers--width-auto">
-            <div class="body__header_content--margin">
+            <div id="header__content--margin">
 
                 <!--HEADER-->
-                <header class="body__containers--flex body__containers--align-center responsiveBody__containers--flexWrap">            
+                <header class="containers--flex containers--align-center responsive__containers--flexWrap">            
                     <div id="reservia_logo">
-                        <img src="P2_05_reservia_img/logo/Reservia.svg" alt="logo écrit Reservia">
+                        <img src="reservia_img/logo/Reservia.svg" alt="logo écrit Reservia">
                     </div>
 
 
                     <!--nav-->
-                    <nav class="body__containers--flex">           
-                        <p class="nav__linkHebergements--visual">
-                            <a href="#anchorHebergements" class="nav__caracters--colorBlue body__containers--flex">Hébergements</a>
+                    <nav class="containers--flex">           
+                        <p id="nav__linkHebergements--visual">
+                            <a href="#anchorHebergements" class="darkBlue containers--flex">Hébergements</a>
                         </p>
                         <p class="nav__linkActivites--borderPhone">
-                            <a href="#anchorActivities" class="body__containers--flex" >Activités</a>
+                            <a href="#anchorActivites" class="containers--flex" >Activités</a>
                         </p>
                     </nav>
 
                     <!--S'inscrire-->
-                    <p id="inscriptionLink"><a href="" class="caracters--bold nav__caracters--colorBlue">S'inscrire</a></p>
+                    <p id="inscriptionLink"><a href="" class="caracters--bold darkBlue">S'inscrire</a></p>
 
                 </header>
 
 
                 <!--SEARCH && FILTER-->
-                <section id="searchAndFilter" class="body__content--paddingPhone ">           
+                <section id="searchAndFilter" class="responsive__content--padding">
+                               
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
 
-                    
+                    <!--search form-->
                     <form method="post">
                         <!--map link-->
-                        <button id="mapButton" class="form__square_buttons--sizes-border form__buttons "><i class="fas fa-map-marker-alt"></i></button>
+                        <button id="mapButton" class="form__square_buttons--sizes-border form__buttons"><i class="fas fa-map-marker-alt"></i></button>
 
                         <!--barre de recherche-->        
                         <input type="text" name="location" id="map" size="22" maxlength="50" value="Marseille, France"/>
@@ -59,109 +56,120 @@
                         <button id="phoneSearchButton" class="form__square_buttons--sizes-border form__search_buttons--looks form__buttons "><i class="fas fa-search"></i></button>
                     </form>
 
-                    <div id="containerFilters" class="body__containers--flex responsiveBody__containers--column">
+                    <!--filters lign-->
+                    <div id="containerFilters" class="containers--flex  responsive__containers--column">
 
                         <h3 id="filterTitle" class="searchAndFilter__block--margin ">Filtres</h3>            <!--filtres-->
 
-                        <div class=" body__containers--flex responsiveBody__containers--flexWrap">
+                        <!--filters to check or not-->
+                        <div class=" containers--flex responsive__containers--flexWrap">
 
-                            <button class="searchAndFilter__filter searchAndFilter__block--margin searchAndFilter__divs_icons--radius
-                            body__containers--flex">
-                                <span class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center body__containers--align-center">
+                            <!--bill button-->
+                            <button class="searchAndFilter__button searchAndFilter__block--margin searchAndFilter__buttons_icons--radius
+                            containers--flex">
 
-                                <i class="fas fa-money-bill-wave filter__billIcon--padding  content__icons--colorBlue"></i>
-
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
+                                <i class="fas fa-money-bill-wave  darkBlue"></i>
                                 </span>
                                 Économique
                             </button>
 
-                            <button class="searchAndFilter__filter searchAndFilter__block--margin searchAndFilter__divs_icons--radius body__containers--flex">
-                                <span class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center body__containers--align-center">
-                                <i class="fas fa-child filter__childIcon--padding content__icons--colorBlue"></i>
+                            <!--child button-->
+                            <button class="searchAndFilter__button searchAndFilter__block--margin searchAndFilter__buttons_icons--radius containers--flex">
+
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
+                                <i class="fas fa-child darkBlue"></i>
                                 </span>
                                 Familial
                             </button>
 
-                            <button class="searchAndFilter__filter searchAndFilter__block--margin searchAndFilter__divs_icons--radius body__containers--flex">
-                                <span class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center body__containers--align-center">
-                                <i class="fas fa-heart filter__heartIcon_dogIcon--padding content__icons--colorBlue"></i>
+                            <!--heart button-->
+                            <button class="searchAndFilter__button searchAndFilter__block--margin searchAndFilter__buttons_icons--radius containers--flex">
+
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
+                                <i class="fas fa-heart darkBlue"></i>
                                 </span>
                                 Romantique
                             </button>
 
-                            <button class="searchAndFilter__filter searchAndFilter__block--margin  body__containers--flex searchAndFilter__divs_icons--radius">
-                                <span class="filters_button__divIcon--looks searchAndFilter__divs_icons--radius body__containers--flex body__containers--justify-center body__containers--align-center">
-                                <i class="fas fa-dog filter__heartIcon_dogIcon--padding content__icons--colorBlue"></i>
+                            <!--dog button-->
+                            <button class="searchAndFilter__button searchAndFilter__block--margin  containers--flex searchAndFilter__buttons_icons--radius">
+
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
+                                <i class="fas fa-dog darkBlue"></i>
                                 </span>
                                 Animaux autorisés
                             </button>
                         </div>
                     </div>
 
-                    <div id="infoLine" class="body__containers--align-center">
-                            <i class="fas fa-info searchAndFilter__iconInfo--border searchAndFilter__divs_icons--radius content__icons--colorBlue"></i>
+                    <!--info point-->
+                    <div id="infoLine" class=" containers--flex containers--align-center">
+                            <i class="fas fa-info searchAndFilter__buttons_icons--radius darkBlue"></i>
                             <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </section>
 
 
-                <section id="anchorHebergements" class="body__containers--flex body__containers--space-between body__sections--margin responsiveBody__containers--column">
+                <!--HEBERGEMENTS-->
+                <section id="anchorHebergements" class="containers--flex containers--space-between sections--margin  responsive__containers--column">
 
-                    <article id="article_noBackground" class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone body__containers--flex body__containers--column body__containers--justify-center phoneBody__containers--align-center responsive__containers--width-auto responsiveBody__sections--padding">
+                    <!--ARTICLE, all locations-->
+                    <article class="responsive__content--padding   containers--flex containers--column containers_spans--justify-center  phone__sections--align-center responsive__containers--width-auto responsive__sections--padding">
                     
-                        <h2 class="sections__h2--margin-bottom ">Hébergements à Marseille</h2>
+                        <h2 class="sections__h2--margin-bottom phone--apply-width-to-center ">Hébergements à Marseille</h2>
 
-                        <div id="containerArticle" class="body__containers--flex phoneBody__containers--column body__containers--space-between">         <!--partie gauche-->
+                        <div id="containerArticle" class="containers--flex phone__containers--column containers--space-between">         <!--partie gauche-->
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">           <!--1st row-->
+                            <figure class="figures--visual hebergements__figures">           <!--1st row-->
                                 <a href ="">
                                     <div id="articleImg_cannebiere" class="article__img--size">   
                                     </div>  
-                                    <div class="figure__textDiv--padding-left article__figureTextDiv--line-height ">
+                                    <div class="figure__textDiv--padding-left article__figureTextDiv--line-height">
                                         <h4>Auberge la Cannebière</h4>
                                         <p>Nuit à partir de <span class="caracters--bold">25€</span></p>
-                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                        <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">
+                            <figure class="figures--visual hebergements__figures">
                                 <a href ="">
                                     <div id="articleImg_port" class="article__img--size">
                                     </div>
                                     <div class="figure__textDiv--padding-left article__figureTextDiv--line-height ">
                                         <h4>Hôtel du port</h4>
                                         <p>Nuit à partir de 52<span class="caracters--bold">€</span></p>
-                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i>
+                                        <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i>
                                     </div>    
                                 </a>
                             </figure >  
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">
+                            <figure class="figures--visual hebergements__figures">
                                 <a href ="">
                                     <div id="articleImg_mouettes" class="article__img--size">
                                     </div>
                                     <div class="figure__textDiv--padding-left article__figureTextDiv--line-height ">
                                         <h4>Hôtel Les mouettes</h4>
                                         <p>Nuit à partir de 76<span class="caracters--bold">€</span></p>
-                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                        <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">           <!--2nd row-->
+                            <figure class="figures--visual hebergements__figures">           <!--2nd row-->
                                 <a href ="">
                                     <div id="articleImg_mer" class="article__img--size">
                                     </div> 
                                     <div class="figure__textDiv--padding-left article__figureTextDiv--line-height ">          
                                         <h4>Hôtel de la mer</h4>
                                         <p>Nuit à partir de 46<span class="caracters--bold">€</span></p>
-                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                        <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star content__icons--colorGrey"></i><i class="fas fa-star content__icons--colorGrey"></i>
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">
+                            <figure class="figures--visual hebergements__figures">
                                 <a href ="">
                                     <div id="articleImg_panier" class="article__img--size figImg">
                                     </div>
@@ -169,81 +177,82 @@
                                         <h4>Auberge Le Panier</h4>
                                         <p>Nuit à partir de <span class="caracters--bold">23€</span></p>
                                         <div>
-                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                        <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
                                         </div>
                                     </div>
                                 </a>
                             </figure>  
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">
+                            <figure class="figures--visual hebergements__figures">
                                 <a href ="">
                                     <div id="articleImg_amina" class="article__img--size">
                                     </div>
                                     <div class="figure__textDiv--padding-left article__figureTextDiv--line-height">
                                         <h4>Hôtel chez Amina</h4>
                                         <p>Nuit à partir de 96<span class="caracters--bold">€</span></p>
-                                        <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i>
+                                        <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i>
                                     </div>
                                 </a>
                             </figure>
 
                         </div>
                         
-                        <h4 id="afficherplusLink" class=""><a href="">Afficher plus</a></h4>
+                        <h4 id="showMoreLink" class="phone--apply-width-to-center"><a href="">Afficher plus</a></h4>
                     </article>
 
-                    <aside  class="content__aside_article--radius body__article_aside_footer--background-grey body__content--paddingPhone sections__article_aside_footer--padding body__containers--flex body__containers--column body__containers--justify-center body__containers--align-center responsive__containers--width-auto responsiveBody__sections--padding">         <!--partie droite-->
+                    <!--ASIDE, "les plus populaires"-->
+                    <aside  class="responsive__content--padding containers--flex containers--column containers_spans--justify-center  containers--align-center responsive__containers--width-auto responsive__sections--padding">         <!--partie droite-->
                         
-                        <div id="asideHeader" class="body__containers--flex body__containers--space-between">
+                        <div id="asideHeader" class="containers--flex containers--space-between">
                             <h2>Les plus populaires</h2>
                             <div><i class="fas fa-chart-line"></i></div>
                         </div>
 
-                        <div id="asideFigures" class="body__containers--flex body__containers--column tabletBody__containers--flexWrap">
-                            
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">
-                                <a href="" class="body__containers--flex">
+                        <div id="containerAside" class="containers--flex containers--column tablet__containers--flexWrap">
+
+                            <figure class="figures--visual hebergements__figures">
+                                <a href="" class="containers--flex">
                                     <div id="asideImg_soleil" class="aside__img--size">
                                     </div>
-                                    <div class="body__containers--flex body__containers--space-between body__containers--column aside__textDiv--padding">
+                                    <div class="containers--flex containers--space-between containers--column aside__textDiv--padding">
                                         <div>
-                                            <h4 class="aside__h4--margin-bottom ">Hôtel Le soleil du matin</h4>
+                                            <h4 class="aside__h4--margin-bottom">Hôtel Le soleil du matin</h4>
                                             <p>Nuit à partir de 128€</p>
                                         </div>
                                         <div>
-                                            <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i>
+                                            <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i>
                                         </div>
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">
-                                <a href="" class="body__containers--flex">
-                                    <div id="asideImg_coeur" class="aside__img--size-2">
+                            <figure class="figures--visual hebergements__figures">
+                                <a href="" class="containers--flex">
+                                    <div id="asideImg_coeur" class=" aside__img--size aside__img--size-modif-width">
                                     </div>
-                                    <div class="body__containers--flex body__containers--space-between body__containers--column aside__textDiv--padding">
+                                    <div class="containers--flex containers--space-between containers--column aside__textDiv--padding">
                                         <div>
                                             <h4 class="aside__h4--margin-bottom ">Au coeur de l'eau Chambres d'hôtes</h4>
                                             <p>Nuit à partir de 71€</p>
                                         </div>
                                         <div>
-                                            <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                            <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
                                         </div>
                                     </div>
                                 </a>
                             </figure>
 
-                            <figure class="content__figures--visual hebergements__figures--background content__borders--radius hebergements__figures--border-margin phoneHebergements__figures--width">
-                                <a href="" class="body__containers--flex">
+                            <figure class="figures--visual hebergements__figures">
+                                <a href="" class="containers--flex">
                                     <div id="asideImg_bleublanc" class="aside__img--size">
                                     </div>
-                                    <div class="body__containers--flex body__containers--space-between body__containers--column aside__textDiv--padding">
+                                    <div class="containers--flex containers--space-between containers--column aside__textDiv--padding">
                                         <div>
                                             <h4 class="aside__h4--margin-bottom ">Hôtel Tout bleu et Blanc</h4>
                                             <p>Nuit à partir de 68€</p>
                                         </div>
                                         <div>
-                                            <i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
+                                            <i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star darkBlue"></i><i class="fas fa-star content__icons--colorGrey"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -253,14 +262,17 @@
                 </section>
 
 
-                <section id="activities" class="body__content--paddingPhone  body__sections--margin body__containers--flex body__containers--column phoneBody__containers--align-center">           <!--Activities, places to visit-->
-                    <h2 id="anchorActivities" class="sections__h2--margin-bottom ">Activités à Marseille</h2>
+                <!--ACTIVITES, places to visit-->
+                <section id="anchorActivites" class="responsive__content--padding sections--margin containers--flex containers--column phone__sections--align-center responsive__sections--align-center">           
 
-                    <div id="containerActivities" class="activities__containers--height body__containers--flex body__containers--space-between phoneBody__containers--column  tabletBody__containers--flexWrap">
+                    <h2 class="sections__h2--margin-bottom phone--apply-width-to-center">Activités à Marseille</h2>
 
-                        <figure class="content__figures--visual content__borders--radius">
+                    <!--activities figures-->
+                    <div id="containerActivites" class="activites__containers--height containers--flex containers--space-between phone__containers--column   tablet__containers--flexWrap">
+
+                        <figure class="figures--visual activites__figures">
                             <a href="">
-                                <div id="activitiesImg_vieuxport" class="activities__allImg--laptopWidth activities__bigImg--laptopHeight activities__img--size">
+                                <div id="activitesImg_vieuxport" class="activites__allImg--laptopWidth activites__bigImg--laptopHeight phone__activites__img--size">
                                 </div>
                                 <div class="figure__textDiv--padding-left">
                                     <h4>Vieux Port</h4>
@@ -268,11 +280,12 @@
                             </a>
                         </figure>
 
-                        <div class="activities__containers--height body__containers--flex body__containers--space-between body__containers--column activities__doubleIMGdiv--heightPhone">
+                        <!--Double img block-->
+                        <div class="activites__containers--height containers--flex containers--space-between containers--column responsive__activites__doubleIMGdiv--height">
 
-                            <figure class="content__figures--visual content__borders--radius">
+                            <figure class="figures--visual activites__figures">
                                 <a href="">
-                                    <div id="activitiesImg_pomegues" class="activities__allImg--laptopWidth activities__pomeguesImg--laptopHeight activities__img--size">
+                                    <div id="activitesImg_pomegues" class="activites__allImg--laptopWidth activites__pomeguesImg--laptopHeight phone__activites__img--size">
                                     </div>
                                     <div class="figure__textDiv--padding-left">
                                         <h4>Fort de Pomègues</h4>
@@ -280,9 +293,9 @@
                                 </a>
                             </figure>
 
-                            <figure class="content__figures--visual content__borders--radius">
+                            <figure class="figures--visual activites__figures">
                                 <a href="">
-                                    <div id="activitiesImg_frioul" class="activities__allImg--laptopWidth activities__frioulImg--laptopHeight activities__img--size">
+                                    <div id="activitesImg_frioul" class="activites__allImg--laptopWidth activites__frioulImg--laptopHeight phone__activites__img--size">
                                     </div>
                                         <div class="figure__textDiv--padding-left">
                                             <h4>Iles du Frioul</h4>
@@ -291,9 +304,9 @@
                             </figure>
                         </div>
 
-                        <figure id="calanquesFirst" class="content__figures--visual content__borders--radius">
+                        <figure id="calanquesFirst" class="figures--visual activites__figures">
                             <a href="">
-                                <div id="activitiesImg_calanques" class="activities__allImg--laptopWidth activities__bigImg--laptopHeight activities__img--size">
+                                <div id="activitesImg_calanques" class="activites__allImg--laptopWidth activites__bigImg--laptopHeight phone__activites__img--size">
                                 </div>
                                 <div class="figure__textDiv--padding-left">
                                     <h4>Parc National des Calanques</h4>
@@ -301,11 +314,12 @@
                             </a>
                         </figure>
 
-                        <div class="activities__containers--height body__containers--flex body__containers--space-between body__containers--column activities__doubleIMGdiv--heightPhone">
+                        <!--Double img block-->
+                        <div class="activites__containers--height containers--flex containers--space-between containers--column responsive__activites__doubleIMGdiv--height">
 
-                            <figure class="content__figures--visual content__borders--radius">
+                            <figure class="figures--visual activites__figures">
                                 <a href="">
-                                    <div id="activitiesImg_notredame" class="activities__allImg--laptopWidth activities__notredameImg--laptopHeight activities__img--size">
+                                    <div id="activitesImg_notredame" class="activites__allImg--laptopWidth activites__notredameImg--laptopHeight phone__activites__img--size">
                                     </div>
                                         <div class="figure__textDiv--padding-left">
                                             <h4>Notre-Dame-de-la-Garde</h4>
@@ -313,9 +327,9 @@
                                 </a>
                             </figure>
 
-                            <figure class="content__figures--visual content__borders--radius">
+                            <figure class="figures--visual activites__figures">
                                 <a href="">
-                                    <div id="activitiesImg_longchamp" class="activities__allImg--laptopWidth activities__longchampImg--laptopHeight activities__img--size">
+                                    <div id="activitesImg_longchamp" class="activites__allImg--laptopWidth activites__longchampImg--laptopHeight phone__activites__img--size">
                                     </div>
                                         <div class="figure__textDiv--padding-left">
                                             <h4>Parc Longchamp</h4>
@@ -328,9 +342,10 @@
 
             </div>
 
-        <footer class="body__containers--flex body__article_aside_footer--background-grey body__content--paddingPhone phoneBody__containers--column 
-        phoneBody__containers--align-center responsiveBody__sections--padding">            <!--Footer/About-->
-            <div>
+        <!--FOOTER, other pages-->
+        <footer class="containers--flex   responsive__content--padding   phone__containers--column 
+        phone__sections--align-center responsive__sections--padding">            <!--Footer/About-->
+            <div class= "phone--apply-width-to-center">
                 <h3>A propos</h3>           
                 
                 <ul>
@@ -340,7 +355,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class= "phone--apply-width-to-center">
                 <h3>Nos hébergements</h3>
                 
                 <ul>
@@ -349,7 +364,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class= "phone--apply-width-to-center">
                 <h3>Assistance</h3>
                 
                 <ul>
