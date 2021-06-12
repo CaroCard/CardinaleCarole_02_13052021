@@ -11,7 +11,7 @@
                     <!--link icones library-->
         <script src="https://kit.fontawesome.com/a7b1873564.js" crossorigin="anonymous"></script>
        
-        <link rel="stylesheet" type="text/css" href="P2_03_feuilledestyle.css">   
+        <link rel="stylesheet" type="text/css" href="style.css">   
     </head>
 
     <body class="responsive__containers--width-auto">
@@ -41,11 +41,12 @@
 
 
                 <!--SEARCH && FILTER-->
-                <section id="searchAndFilter" class="responsive__content--padding">           
+                <section id="searchAndFilter" class="responsive__content--padding">
+                               
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
 
-                    
+                    <!--search form-->
                     <form method="post">
                         <!--map link-->
                         <button id="mapButton" class="form__square_buttons--sizes-border form__buttons"><i class="fas fa-map-marker-alt"></i></button>
@@ -59,38 +60,46 @@
                         <button id="phoneSearchButton" class="form__square_buttons--sizes-border form__search_buttons--looks form__buttons "><i class="fas fa-search"></i></button>
                     </form>
 
+                    <!--filters lign-->
                     <div id="containerFilters" class="containers--flex  responsive__containers--column">
 
                         <h3 id="filterTitle" class="searchAndFilter__block--margin ">Filtres</h3>            <!--filtres-->
 
+                        <!--filters to check or not-->
                         <div class=" containers--flex responsive__containers--flexWrap">
 
+                            <!--bill button-->
                             <button class="searchAndFilter__button searchAndFilter__block--margin searchAndFilter__buttons_icons--radius
                             containers--flex">
-                                <span class="filters_button__divIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
 
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
                                 <i class="fas fa-money-bill-wave  darkBlue"></i>
-
                                 </span>
                                 Économique
                             </button>
 
+                            <!--child button-->
                             <button class="searchAndFilter__button searchAndFilter__block--margin searchAndFilter__buttons_icons--radius containers--flex">
-                                <span class="filters_button__divIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
+
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
                                 <i class="fas fa-child darkBlue"></i>
                                 </span>
                                 Familial
                             </button>
 
+                            <!--heart button-->
                             <button class="searchAndFilter__button searchAndFilter__block--margin searchAndFilter__buttons_icons--radius containers--flex">
-                                <span class="filters_button__divIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
+
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
                                 <i class="fas fa-heart darkBlue"></i>
                                 </span>
                                 Romantique
                             </button>
 
+                            <!--dog button-->
                             <button class="searchAndFilter__button searchAndFilter__block--margin  containers--flex searchAndFilter__buttons_icons--radius">
-                                <span class="filters_button__divIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
+
+                                <span class="filters_button__spanIcon--looks searchAndFilter__buttons_icons--radius containers--flex containers_spans--justify-center  containers--align-center">
                                 <i class="fas fa-dog darkBlue"></i>
                                 </span>
                                 Animaux autorisés
@@ -98,6 +107,7 @@
                         </div>
                     </div>
 
+                    <!--info point-->
                     <div id="infoLine" class=" containers--flex containers--align-center">
                             <i class="fas fa-info searchAndFilter__buttons_icons--radius darkBlue"></i>
                             <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -105,8 +115,10 @@
                 </section>
 
 
+                <!--HEBERGEMENTS-->
                 <section id="anchorHebergements" class="containers--flex containers--space-between sections--margin  responsive__containers--column">
 
+                    <!--ARTICLE, all locations-->
                     <article class="responsive__content--padding   containers--flex containers--column containers_spans--justify-center  phone__sections--align-center responsive__containers--width-auto responsive__sections--padding">
                     
                         <h2 class="sections__h2--margin-bottom phone--apply-width-to-center ">Hébergements à Marseille</h2>
@@ -192,6 +204,7 @@
                         <h4 class="phone--apply-width-to-center"><a href="">Afficher plus</a></h4>
                     </article>
 
+                    <!--ASIDE, "les plus populaires"-->
                     <aside  class="responsive__content--padding containers--flex containers--column containers_spans--justify-center  containers--align-center responsive__containers--width-auto responsive__sections--padding">         <!--partie droite-->
                         
                         <div id="asideHeader" class="containers--flex containers--space-between">
@@ -219,7 +232,7 @@
 
                             <figure class="figures--visual hebergements__figures">
                                 <a href="" class="containers--flex">
-                                    <div id="asideImg_coeur" class="aside__img--size-modif">
+                                    <div id="asideImg_coeur" class=" aside__img--size aside__img--size-modif-width">
                                     </div>
                                     <div class="containers--flex containers--space-between containers--column aside__textDiv--padding">
                                         <div>
@@ -253,10 +266,12 @@
                 </section>
 
 
-                <section id="anchorActivites" class="responsive__content--padding    sections--margin containers--flex containers--column phone__sections--align-center responsive__sections--align-center">           <!--Activites, places to visit-->
+                <!--ACTIVITES, places to visit-->
+                <section id="anchorActivites" class="responsive__content--padding    sections--margin containers--flex containers--column phone__sections--align-center responsive__sections--align-center">           
 
                     <h2 class="sections__h2--margin-bottom phone--apply-width-to-center">Activités à Marseille</h2>
 
+                    <!--activities figures-->
                     <div id="containerActivites" class="activites__containers--height containers--flex containers--space-between phone__containers--column   tablet__containers--flexWrap">
 
                         <figure class="figures--visual activites__figures">
@@ -269,6 +284,7 @@
                             </a>
                         </figure>
 
+                        <!--Double img block-->
                         <div class="activites__containers--height containers--flex containers--space-between containers--column responsive__activites__doubleIMGdiv--height">
 
                             <figure class="figures--visual activites__figures">
@@ -302,6 +318,7 @@
                             </a>
                         </figure>
 
+                        <!--Double img block-->
                         <div class="activites__containers--height containers--flex containers--space-between containers--column responsive__activites__doubleIMGdiv--height">
 
                             <figure class="figures--visual activites__figures">
@@ -329,6 +346,7 @@
 
             </div>
 
+        <!--FOOTER, other pages-->
         <footer class="containers--flex   responsive__content--padding   phone__containers--column 
         phone__sections--align-center responsive__sections--padding">            <!--Footer/About-->
             <div class= "phone--apply-width-to-center">

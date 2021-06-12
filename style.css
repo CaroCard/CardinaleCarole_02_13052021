@@ -1,13 +1,12 @@
                         /*BODY*/
 body
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', verdana, sans-serif;
     width: 1440px;
     margin: auto;
 }
 
                         /*FLEXBOX general*/
-
 .containers--flex
 {
     display: flex;
@@ -34,7 +33,6 @@ body
 }
 
                         /*COLORS*/
-
 /* nav && filters icons && stars icons*/
 .darkBlue
 {
@@ -54,17 +52,20 @@ article, aside, footer
 }
 
                         /*SPACES general*/
-#header__content--margin
+/*all but footer*/
+#header__content--margin            
 {
     margin: 0 3em 0em 3em;
 }
 
-.sections__h2--margin-bottom
+/* between sections titles and figures*/
+.sections__h2--margin-bottom        
 {
     margin-bottom: 1.2em;
 }
 
-.figure__textDiv--padding-left
+/*between text and  left border*/
+.figure__textDiv--padding-left          
 {
     padding-left: 0.8em;
 }
@@ -81,12 +82,12 @@ h1, h2
     font-size: 1.4em;
 }
 
-h3, input
+#RechercherButton, .filters_button__spanIcon--looks
 {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
-h4
+h3, h4, input, .searchAndFilter__button, .form__square_buttons--sizes-border 
 {
     font-size: 1em;
 }
@@ -94,6 +95,11 @@ h4
 p, li
 {
     font-size: 0.9em;
+}
+
+#infoLine i, article i, aside i
+{
+    font-size: 0.8em;
 }
 
 /*bold*/
@@ -113,7 +119,7 @@ a
                         /*SECTIONS VISUALS*/
 .figures--visual
 {
-    overflow: hidden;
+    overflow: hidden;           /*hides/rounds corners of img*/
     box-shadow: 0px 5px 5px #e4e4e4;
     border-radius: 1em;
 }
@@ -136,8 +142,8 @@ article, aside
 
 header p
 {
-    padding: 2em 1.7em 3em 1.7em;
     margin-top: 0;
+    padding: 2em 1.7em 3em 1.7em;       /*handles words spaces, laptop visual*/
 }
 
 #reservia_logo
@@ -156,12 +162,12 @@ header p
 
 
                                     /*SEARCH & FILTER*/
-#searchAndFilter
+#searchAndFilter            /*space under section*/
 {
     margin: 0 0 2em 0;
 }  
 
-#searchAndFilter h1
+#searchAndFilter h1         /*to have the under p closer*/
 {
     line-height: 0;
 }
@@ -177,10 +183,9 @@ form
     border: none;
 }
 
-.form__square_buttons--sizes-border  /*map & phoneSearch buttons*/
+.form__square_buttons--sizes-border         /*map & phoneSearch buttons*/
 {
     width: 50px;
-    font-size: 1em;
 }
 
 #mapButton          /*icon gps*/
@@ -210,7 +215,6 @@ input          /*where you put the city*/
 {
     border-radius: 0 0.8em 0.8em 0;
     padding: 0 1.2em 0 1.2em;
-    font-size: 1.2em;
 }
 
 #phoneSearchButton          /*phone search button with icon*/
@@ -235,47 +239,41 @@ input          /*where you put the city*/
     border-radius: 2em;
 }
 
+.searchAndFilter__button, .filters_button__spanIcon--looks
+{
+    height: 50px;
+}
+
 .searchAndFilter__button          /*filters*/
 {
     border: 3px #F2F2F2 solid;
     background-color: #ffffff;
-    height: 50px;
-    font-size: 1em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     padding: 0.85em 0.9em 0 0;
 }
 
-.filters_button__divIcon--looks         /*icons background & else*/  /****RENOMME DIV EN SPAN*****/
+.filters_button__spanIcon--looks, .searchAndFilter__button:hover
 {
-    height: 50px;
-    width: 50px;
     background-color: #DEEBFF;
-    font-size: 1.2em; 
+}
+
+.filters_button__spanIcon--looks         /*icons background & else*/
+{
+    width: 50px;
     margin: -0.85em 0.5em 0 -0.2em;  
 }
 
  .searchAndFilter__button:hover           /*filters when hovering*/
 {
-    background-color: #DEEBFF;
     border: 3px #DEEBFF solid;
 }
 
 #infoLine i       /* "i" icon*/
 {
     border: 1px #F2F2F2 solid;
-    font-size: 0.8em;
     padding: 0.4em 0.7em 0.4em 0.7em;
     margin-right: 0.5em;
-}
-
-
-
-                        /*HEBERGEMENTS*/
-
-article i, aside i
-{
-    font-size: 0.8em;
 }
 
 
@@ -301,7 +299,7 @@ article figure
 
 .article__figureTextDiv--line-height
 {
-    line-height: 0.3em;
+    line-height: 0.3em;         /*reduce space between img and text so that stars fit in*/
 }
 
 /*Images laptop sizes to fixate the background area*/
@@ -314,32 +312,32 @@ article figure
 /*Images ARTICLE*/
 #articleImg_cannebiere 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/1cannebiereS.jpg")
+    background-image: url("reservia_img/hebergements/4_small/1cannebiereS.jpg")
 }
 
 #articleImg_port 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/2portS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/2portS.jpg");
 }
 
 #articleImg_mouettes 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/3mouettesS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/3mouettesS.jpg");
 }
 
 #articleImg_mer 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/4merS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/4merS.jpg");
 }
 
 #articleImg_panier 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/5panierS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/5panierS.jpg");
 }
 
 #articleImg_amina 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/6aminaS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/6aminaS.jpg");
 }
 
 
@@ -352,13 +350,17 @@ aside
     margin-left: 2.5em;         /*creates empty space between article & aside*/
 }
 
-#asideHeader            /*space between title and icon*/
+#asideHeader, aside figure
 {
     width: 325px;
+}
+
+#asideHeader            /*space between title and icon*/
+{
     margin-bottom: 1.2em;
 }
 
-#asideHeader div            /*icon centered and sized*/
+#asideHeader div            /*icon centered vertically and sized*/
 { 
     align-self: center;
     font-size: 1.8em;
@@ -366,7 +368,6 @@ aside
 
 aside figure        /*management block img + legend*/
 {
-    width: 325px;
     height: 134px;
 }
 
@@ -392,26 +393,25 @@ aside h4
     height: 134px;
 }
 
-.aside__img--size-modif         /*correction of the unexplained cut picture 8*/
+.aside__img--size-modif-width         /*correction of the unexplained cut picture 8*/
 {
     width: 190px;
-    height: 134px;
 }
 
 /*Images ASIDE*/
 #asideImg_soleil 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/7soleilS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/7soleilS.jpg");
 }
 
 #asideImg_coeur 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/8coeurS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/8coeurS.jpg");
 }
 
 #asideImg_bleublanc 
 { 
-    background-image: url("P2_05_reservia_img/hebergements/4_small/9bleublancS.jpg");
+    background-image: url("reservia_img/hebergements/4_small/9bleublancS.jpg");
 }
 
 
@@ -424,9 +424,7 @@ aside h4
  
 .activites__figures
 {
-    width: 300px;
-    max-height: 445px;  
-    margin: 0;
+    margin: 0;          /*default marges reduce figures width*/
 }
 
 /*Images laptop sizes to fixate background area*/
@@ -463,32 +461,32 @@ aside h4
 /*Images ACTIVITES*/
 #activitesImg_vieuxport
 {
-    background-image: url("P2_05_reservia_img/activites/4_small/1vieuxportS.jpg");
+    background-image: url("reservia_img/activites/4_small/1vieuxportS.jpg");
 }
 
 #activitesImg_pomegues 
 {
-    background-image: url("P2_05_reservia_img/activites/4_small/2pomeguesS.jpg");
+    background-image: url("reservia_img/activites/4_small/2pomeguesS.jpg");
 }
 
 #activitesImg_frioul 
 { 
-    background-image: url("P2_05_reservia_img/activites/4_small/3frioulS.jpg");
+    background-image: url("reservia_img/activites/4_small/3frioulS.jpg");
 }
 
 #activitesImg_calanques 
 { 
-    background-image: url("P2_05_reservia_img/activites/4_small/4calanquesS.jpg");
+    background-image: url("reservia_img/activites/4_small/4calanquesS.jpg");
 }
 
 #activitesImg_notredame 
 { 
-    background-image: url("P2_05_reservia_img/activites/4_small/5notredameS.jpg");
+    background-image: url("reservia_img/activites/4_small/5notredameS.jpg");
 }
 
 #activitesImg_longchamp 
 { 
-    background-image: url("P2_05_reservia_img/activites/4_small/6longchampS.jpg");
+    background-image: url("reservia_img/activites/4_small/6longchampS.jpg");
 }
 
 
@@ -523,7 +521,9 @@ li
 
 
 
-@media screen and (max-width: 88em)
+
+
+@media screen and (max-width: 79em)
 {
     .responsive__containers--width-auto
     {
@@ -757,32 +757,32 @@ li
     /*Images ACTIVITES PHONE*/
     #activitesImg_vieuxport
     {
-        background-image: url("P2_05_reservia_img/activites_phone/1vieuxportPhone.jpg");
+        background-image: url("reservia_img/activites_phone/1vieuxportPhone.jpg");
     }
 
     #activitesImg_pomegues 
     {
-        background-image: url("P2_05_reservia_img/activites_phone/2pomeguesPhone.jpg");
+        background-image: url("reservia_img/activites_phone/2pomeguesPhone.jpg");
     }
 
     #activitesImg_frioul 
     { 
-        background-image: url("P2_05_reservia_img/activites_phone/3frioulPhone.jpg");
+        background-image: url("reservia_img/activites_phone/3frioulPhone.jpg");
     }
 
     #activitesImg_calanques 
     { 
-        background-image: url("P2_05_reservia_img/activites_phone/4calanquesPhone.jpg");
+        background-image: url("reservia_img/activites_phone/4calanquesPhone.jpg");
     }
 
     #activitesImg_notredame 
     { 
-        background-image: url("P2_05_reservia_img/activites_phone/5notredamePhone.jpg");
+        background-image: url("reservia_img/activites_phone/5notredamePhone.jpg");
     }
 
     #activitesImg_longchamp 
     { 
-        background-image: url("P2_05_reservia_img/activites_phone/6longchampPhone.jpg");
+        background-image: url("reservia_img/activites_phone/6longchampPhone.jpg");
     }
 
 
@@ -952,32 +952,32 @@ li
     /*Images ARTICLE PHONE*/
     #articleImg_cannebiere 
     { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/1cannebierePhone.jpg")
+        background-image: url("reservia_img/hebergements_phone/1cannebierePhone.jpg")
     }
 
     #articleImg_port 
     { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/2portPhone.jpg");
+        background-image: url("reservia_img/hebergements_phone/2portPhone.jpg");
     }
 
     #articleImg_mouettes 
     { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/3mouettesPhone.jpg");
+        background-image: url("reservia_img/hebergements_phone/3mouettesPhone.jpg");
     }
 
     #articleImg_mer 
     { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/4merPhone.jpg");
+        background-image: url("reservia_img/hebergements_phone/4merPhone.jpg");
     }
 
     #articleImg_panier 
     { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/5panierPhone.jpg");
+        background-image: url("reservia_img/hebergements_phone/5panierPhone.jpg");
     }
 
     #articleImg_amina 
     { 
-        background-image: url("P2_05_reservia_img/hebergements_phone/6aminaPhone.jpg");
+        background-image: url("reservia_img/hebergements_phone/6aminaPhone.jpg");
     }
 
 
