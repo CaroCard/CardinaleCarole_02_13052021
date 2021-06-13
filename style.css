@@ -697,7 +697,7 @@ li
         margin: 2em 0 1.5em 0;
     }
   
-    #filterSelection, #filterTitle
+    #filterSelection, #filterTitle          /*alignement to the left of the page*/
     {
         align-self: flex-start;
     }
@@ -866,58 +866,11 @@ li
 
 
 
-                            /*HEADER*/
-   
-    header 
-    {
-        justify-content: space-between;
-    }
-
-    header p
-    {
-        padding: 0;
-    }
-
-    nav         /*space between nav & title*/
-    {
-        order: 1;
-        width: 100%;
-    }
-
-    nav a
-    {
-        padding: 0.8em;         /*put space between word and border*/
-        justify-content: space-around;
-    }
-
-    nav p           /*for links to take all the row's space*/
-    {
-        width: 50%; 
-    }
-
-    #reservia_logo
-    {
-        padding: 1em 0 1em 1.4em;
-    }
-
-    .nav__linkActivites--borderPhone
-    {
-        border-bottom: 2px #F2F2F2 solid;
-    }
-
-
-
                             /*SEARCH && FILTERS*/
 
     #searchAndFilter h1
     {
         line-height: 1.2em;
-        margin-bottom: 0;
-    }
-    
-    form
-    {
-        margin: 2em 0 1.5em 0;
     }
 
     #RechercherButton
@@ -929,11 +882,6 @@ li
     {
         visibility: visible;
     }    
-    
-    #filterTitle, #filterSelection          /*alignement to the left of the page*/
-    {
-        align-self: flex-start;
-    }
 
 
 
@@ -958,13 +906,6 @@ li
     {
         height: auto;
     }
-
-    #article_noBackground
-    {
-        background: none;
-    }
-    
-    
 
     article figure 
     {
@@ -1017,10 +958,6 @@ li
 
 
                         /*ASIDE*/
-    aside 
-    { 
-        margin-left: 0;
-    }
 
     #containerAside
     {
@@ -1030,10 +967,9 @@ li
     aside figure 
     {
         height: 134px;
-        justify-items: center;
     }
 
-    .tablet__containers--flexWrap
+    .tablet__containers--flexWrap           /*annulation of tablet wrap selector*/
     {
         flex-wrap: nowrap;
     }
@@ -1044,13 +980,6 @@ li
     #containerActivites
     {
         height: auto;
-    }
-
-    #containerActivites figure 
-    {
-        width: 334px;
-        height: 190px;
-        margin-bottom: 1.4em;
     }
 
 
