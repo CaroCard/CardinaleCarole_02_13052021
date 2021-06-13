@@ -588,7 +588,7 @@ li
 
     #header__content--margin          /*global margin concerned by total body except footer*/
     {
-        margin: 0; 
+        margin: 0;
     }
 
     .responsive__content--padding           /*sides padding of all parts*/
@@ -643,6 +643,11 @@ li
         width: auto;
     }
 
+    #inscriptionLink
+    {
+        padding-right: 1em;
+    }
+
     nav         /*space between nav & title*/
     {
         margin-bottom: 0.5em;
@@ -664,11 +669,6 @@ li
     #reservia_logo
     {
         padding: 1em 0 1em 1.4em;
-    }
-
-    #inscriptionLink
-    {
-        padding: 1em 1.4em 1em 0;
     }
 
     #nav__linkHebergements--visual
@@ -898,11 +898,6 @@ li
     #reservia_logo
     {
         padding: 1em 0 1em 1.4em;
-    }
-
-    #inscriptionLink
-    {
-        padding: 1em 1.4em 1em 0;
     }
 
     .nav__linkActivites--borderPhone
