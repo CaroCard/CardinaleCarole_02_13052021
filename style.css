@@ -205,6 +205,7 @@ input          /*where you put the city*/
     border: 1px #F2F2F2 solid;
     border-left: none;
     border-right: none;
+    width: 200px;
     height: 46px;
     padding-left: 1em;
     margin: 0 -1em 0 -0.3em;  /*remove empty sides spaces with buttons, more on the right because of the border-radius that needs to be reached*/
@@ -633,6 +634,7 @@ li
     #reservia_logo
     {
         margin-bottom: 0.5em;
+        width: auto;
     }
 
     nav         /*space between nav & title*/
@@ -832,7 +834,7 @@ li
 }
 
 
-@media screen and (max-width: 62em)
+@media screen and (max-width: 43em)
 {
     .body__bigSections--margin          /*margin corrected for header, hebergements, activites*/     
     {
@@ -870,14 +872,8 @@ li
         padding: 0;
     }
 
-    #reservia_logo
-    {
-        margin-bottom: 0.5em;
-    }
-
     nav         /*space between nav & title*/
     {
-        margin-bottom: 0.5em;
         order: 1;
         width: 100%;
     }
