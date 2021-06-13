@@ -832,7 +832,7 @@ li
 }
 
 
-@media screen and (max-width: 48em)
+@media screen and (max-width: 62em)
 {
     .body__bigSections--margin          /*margin corrected for header, hebergements, activites*/     
     {
