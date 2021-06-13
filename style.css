@@ -528,11 +528,17 @@ li
 }
 
 
-@media screen and (max-width: 91em)
+@media screen and (max-width: 91em) /*little computers*/
 {
     .responsive__containers--width-auto
     {
         width: auto;
+    }
+
+    /*all but footer*/
+    #header__content--margin            
+    {
+        margin: 0 1.5em 0em 1.5em;
     }
 
     article
@@ -561,7 +567,7 @@ li
 
 
 
-@media screen and (max-width: 79em)
+@media screen and (max-width: 79em) /*tablets*/
 {
     article, #containerActivites, aside
     {
@@ -834,7 +840,7 @@ li
 }
 
 
-@media screen and (max-width: 43em)
+@media screen and (max-width: 43em) /*phones*/
 {
     .body__bigSections--margin          /*margin corrected for header, hebergements, activites*/     
     {
