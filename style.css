@@ -115,7 +115,6 @@ p, li
 }
 
                         /*LINKS general*/
-
 a
 {
     text-decoration: none;
@@ -145,7 +144,6 @@ article, aside
 
 
                                     /*HEADER*/                
-
 header p
 {
     margin-top: 0;
@@ -558,10 +556,8 @@ li
 
     aside
     {
-
         margin-left: 0.5em;         /*creates empty space between article & aside*/
         padding: 0 0.5em 0 0.5em;       /*to keep the figures to go on the borders*/
-
     }
 }
 
@@ -585,7 +581,6 @@ li
     }
 
             /*MARGIN && PADDING*/
-
     #header__content--margin          /*global margin concerned by total body except footer*/
     {
         margin: 0;
@@ -612,7 +607,6 @@ li
     }
 
             /*FLEXBOX*/
-
     .responsive__containers--flexWrap, .tablet__containers--flexWrap
     {
         flex-wrap: wrap;
@@ -626,7 +620,6 @@ li
 
 
                             /*HEADER*/
-   
     header 
     {
         justify-content: space-between;
@@ -710,7 +703,6 @@ li
 
 
                         /*HEBERGEMENTS*/
-  
     aside, article
     {
         border-radius: 0;
@@ -719,7 +711,6 @@ li
 
 
                         /*ARTICLE*/
-
     article 
     {
         align-items: center;
@@ -867,7 +858,6 @@ li
 
 
                             /*SEARCH && FILTERS*/
-
     #searchAndFilter h1
     {
         line-height: 1.2em;
@@ -895,7 +885,6 @@ li
 
 
                         /*HEBERGEMENTS*/
-
     article figure, aside figure
     {
         width: 324px;
@@ -958,7 +947,6 @@ li
 
 
                         /*ASIDE*/
-
     #containerAside
     {
         flex-direction: column;
