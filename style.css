@@ -308,11 +308,11 @@ article figure
     line-height: 0.3em;         /*reduce space between img and text so that stars fit in*/
 }
 
-/*Images laptop sizes*/
-.article__img--size
+article img
 {
     width: 240px;
     height: 114px;
+    object-fit: cover;
 }
 
 
@@ -361,13 +361,6 @@ aside h4
     margin-bottom: -0.5em;
 }
 
-/*Images laptop sizes*/
-.aside__img--size
-{
-    width: 127px;
-    height: 134px;
-}
-
 
 
                                     /*ACTIVITES*/
@@ -385,6 +378,7 @@ aside h4
 .activites__allImg--laptopWidth
 {
     width: 300px;
+    object-fit: cover;
 }
 
 .activites__bigImg--laptopHeight
@@ -392,22 +386,22 @@ aside h4
     height: 390px;
 }
 
-.activites__pomeguesImg--laptopHeight
+#pomegues
 {
     height: 180px;
 }
 
-.activites__frioulImg--laptopHeight
+#frioul
 {
     height: 110px;
 }
 
-.activites__notredameImg--laptopHeight
+#notreDame
 {
     height: 140px;
 }
 
-.activites__longchampImg--laptopHeight
+#longchamp
 {
     height: 150px;
 }
@@ -443,7 +437,7 @@ li
 }
 
 
-@media screen and (max-width: 91em) /*little computers, 91em=1456px*/
+@media screen and (max-width: 89em) /*little computers, 89em=1424px*/
 {
     .responsive__containers--width-auto
     {
@@ -477,8 +471,6 @@ li
         padding: 0 0.5em 0 0.5em;       /*to keep the figures to go on the borders*/
     }
 }
-
-
 
 @media screen and (max-width: 79em) /*tablets 79em=1264px*/
 {
@@ -695,12 +687,18 @@ li
         height: 424px;
     }
 
-    /*Images phone sizes*/
-    .phone__activites__img--size
+    /*Images responsive sizes*/
+    .activites__allImg--laptopWidth
     {
         width: 334px;
+        object-fit: cover;
+    }
+
+    .activites__bigImg--laptopHeight, #pomegues, #frioul, #notreDame, #longchamp
+    {
         height: 134px;
     }
+
 
 
 
@@ -715,6 +713,7 @@ li
         width: auto;
     }
 }
+
 
 
 @media screen and (max-width: 43em) /*phones 43em=688px*/
@@ -787,16 +786,16 @@ li
         height: 190px;
     }
 
-    .article__figureTextDiv--line-height           /*bring upper the text, closer to the image, so that the stars appear*/
-    {
-        line-height: 0;
-    }
-
-    /*Images phone sizes*/
-    .article__img--size
+    article img
     {
         width: 326px;
         height: 114px;
+        object-fit: cover;
+    }
+
+    .article__figureTextDiv--line-height           /*bring upper the text, closer to the image, so that the stars appear*/
+    {
+        line-height: 0;
     }
 
 
